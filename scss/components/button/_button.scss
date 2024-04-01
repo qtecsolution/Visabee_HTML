@@ -18,14 +18,12 @@ button,
   }
 }
 
-.btn-submit {
-  background: $blue-green-500;
-  @include border(solid, 2, $blue-green-500);
-  @include radius(8);
-  @include flex-center;
-  gap: size(8);
-  width: size(180);
-  height: size(56);
+.primary-button-with-ico {
+  background: $gradient-hover-active;
+  @include radius(10);
+  @include flex;
+  align-items: center;
+  gap: size(9);
   padding: size(16);
 
   .text {
@@ -35,221 +33,247 @@ button,
   }
 
   .icon {
-    @include square(18);
-    @include flex-center;
-    overflow: hidden;
-  }
-
-  @include hover {
-    background: $white;
-
-    .text {
-      color: $blue-green-500;
-    }
-
-    .icon {
-      svg {
-        path {
-          stroke: $blue-green-500;
-        }
-      }
-    }
-  }
-}
-
-.btn-viewprofile {
-  @include setBgColor($white, $blue-green-500);
-  @include border(solid, 2, $blue-green-500);
-  @include radius(8);
-  font-size: size(16);
-  font-weight: 500;
-  @include flex-center;
-  gap: size(8);
-  width: size(180);
-  height: size(56);
-  padding: size(16);
-
-  @include hover {
-    @include setBgColor($blue-green-500, $white);
-  }
-}
-
-.btn-checkup {
-  @include setBgColor($blue-green-500, $white);
-  @include border(solid, 2, $blue-green-500);
-  @include radius(8);
-  @include flex-center;
-  font-size: size(16);
-  font-weight: 500;
-  width: size(148);
-  height: size(48);
-  padding: size(16);
-
-  @include hover {
-    @include setBgColor($white, $blue-green-500);
-  }
-}
-
-.btn-resend {
-  color: $neutral-950;
-  font-size: size(13);
-  font-weight: 500;
-  line-height: 1.375;
-
-  @include hover {
-    color: $blue-green-600;
-  }
-}
-
-.btn-hamburger {
-  background: $white;
-  @include border(solid, 1, $iconborder);
-  @include radius(10);
-  @include flex-center;
-  @include square(40);
-  padding: size(8);
-
-  @include hover {
-    svg {
-      path {
-        fill: $blue-green-600;
-      }
-    }
-  }
-}
-
-.btn-menu {
-  background: $white;
-  @include border(solid, 1, $iconborder);
-  @include radius(10);
-  @include flex-center;
-  @include square(40);
-  padding: size(8);
-
-  @include hover {
-    svg {
-      path {
-        fill: $blue-green-600;
-      }
-    }
-  }
-}
-
-.btn-call {
-  @include flex-center-vert;
-  gap: size(11);
-
-  .linkicon {
-    @include border(solid, 1, $iconborder);
-    @include radius(10);
-    @include flex-center;
-    @include square(40);
-    padding: size(8);
-  }
-
-  .linkinfo {
-    @include flex-column;
-
-    .linktitle,
-    .linktext {
-      color: $neutral-950;
-      font-size: size(13);
-      line-height: 1.5;
-    }
-
-    .linktitle {
-      font-weight: 500;
-    }
-
-    .linktext {
-      font-weight: 600;
-    }
-  }
-}
-
-.btn-play {
-  @include square(96);
-  @include circle;
-  overflow: hidden;
-
-  @include breakpoint(tab992) {
-    @include square(183);
-  }
-}
-.btn-book {
-  background: $white;
-  @include border(solid, 2, $white);
-  @include radius(8);
-  @include flex-center;
-  gap: size(8);
-  padding: size(10);
-  leading-trim: both;
-  text-edge: cap;
-  color: $blue-green-600;
-  font-weight: 600;
-  font-size: size(14);
-  line-height: size(22);
-  @include breakpoint(mobile576) {
-    padding: size(12);
-  }
-  @include breakpoint(tab992) {
-    min-width: size(250);
-  }
-  @include hover {
-    background-color: $blue-green-600;
     color: $white;
   }
-}
-.contact-btn {
-  @include setBgColor($blue-green-500, $white);
-  text-align: center;
-  padding: size(8);
-  @include radius(8);
-  text-align: right;
-  leading-trim: both;
-  color: $white;
-  text-edge: cap;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  @include border(solid, 4, $blue-green-500);
-  @include breakpoint(mobile576) {
-    padding: size(12) size(12);
-  }
+
   @include hover {
-    @include setBgColor($white, $blue-green-500);
+    background: $gradient-orginal;
   }
 }
 
-.applynow {
-  @include setBgColor($blue-green-500, $white);
-  @include flex;
-  padding: size(10) size(14);
-  gap: size(10);
-  display: inline-flex;
-  @include radius(10);
-  width: size(180);
-  align-items: center;
-  justify-content: center;
-  @include border(solid, 5, $blue-green-500);
-  font-size: size(16);
-  font-style: normal;
-  font-weight: 500;
-  line-height: size(24);
-  svg {
-    path {
-      @include transitionsall;
-    }
-  }
-  @include hover {
-    @include setBgColor(transparent, $blue-green-500);
+// .btn-submit {
+//   background: $blue-green-500;
+//   @include border(solid, 2, $blue-green-500);
+//   @include radius(8);
+//   @include flex-center;
+//   gap: size(8);
+//   width: size(180);
+//   height: size(56);
+//   padding: size(16);
 
-    svg {
-      path {
-        stroke: $blue-green-500;
-      }
-    }
-  }
-}
+//   .text {
+//     color: $white;
+//     font-size: size(16);
+//     font-weight: 500;
+//   }
+
+//   .icon {
+//     @include square(18);
+//     @include flex-center;
+//     overflow: hidden;
+//   }
+
+//   @include hover {
+//     background: $white;
+
+//     .text {
+//       color: $blue-green-500;
+//     }
+
+//     .icon {
+//       svg {
+//         path {
+//           stroke: $blue-green-500;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .btn-viewprofile {
+//   @include setBgColor($white, $blue-green-500);
+//   @include border(solid, 2, $blue-green-500);
+//   @include radius(8);
+//   font-size: size(16);
+//   font-weight: 500;
+//   @include flex-center;
+//   gap: size(8);
+//   width: size(180);
+//   height: size(56);
+//   padding: size(16);
+
+//   @include hover {
+//     @include setBgColor($blue-green-500, $white);
+//   }
+// }
+
+// .btn-checkup {
+//   @include setBgColor($blue-green-500, $white);
+//   @include border(solid, 2, $blue-green-500);
+//   @include radius(8);
+//   @include flex-center;
+//   font-size: size(16);
+//   font-weight: 500;
+//   width: size(148);
+//   height: size(48);
+//   padding: size(16);
+
+//   @include hover {
+//     @include setBgColor($white, $blue-green-500);
+//   }
+// }
+
+// .btn-resend {
+//   color: $neutral-950;
+//   font-size: size(13);
+//   font-weight: 500;
+//   line-height: 1.375;
+
+//   @include hover {
+//     color: $blue-green-600;
+//   }
+// }
+
+// .btn-hamburger {
+//   background: $white;
+//   @include border(solid, 1, $iconborder);
+//   @include radius(10);
+//   @include flex-center;
+//   @include square(40);
+//   padding: size(8);
+
+//   @include hover {
+//     svg {
+//       path {
+//         fill: $blue-green-600;
+//       }
+//     }
+//   }
+// }
+
+// .btn-menu {
+//   background: $white;
+//   @include border(solid, 1, $iconborder);
+//   @include radius(10);
+//   @include flex-center;
+//   @include square(40);
+//   padding: size(8);
+
+//   @include hover {
+//     svg {
+//       path {
+//         fill: $blue-green-600;
+//       }
+//     }
+//   }
+// }
+
+// .btn-call {
+//   @include flex-center-vert;
+//   gap: size(11);
+
+//   .linkicon {
+//     @include border(solid, 1, $iconborder);
+//     @include radius(10);
+//     @include flex-center;
+//     @include square(40);
+//     padding: size(8);
+//   }
+
+//   .linkinfo {
+//     @include flex-column;
+
+//     .linktitle,
+//     .linktext {
+//       color: $neutral-950;
+//       font-size: size(13);
+//       line-height: 1.5;
+//     }
+
+//     .linktitle {
+//       font-weight: 500;
+//     }
+
+//     .linktext {
+//       font-weight: 600;
+//     }
+//   }
+// }
+
+// .btn-play {
+//   @include square(96);
+//   @include circle;
+//   overflow: hidden;
+
+//   @include breakpoint(tab992) {
+//     @include square(183);
+//   }
+// }
+
+// .btn-book {
+//   background: $white;
+//   @include border(solid, 2, $white);
+//   @include radius(8);
+//   @include flex-center;
+//   gap: size(8);
+//   padding: size(10);
+//   leading-trim: both;
+//   text-edge: cap;
+//   color: $blue-green-600;
+//   font-weight: 600;
+//   font-size: size(14);
+//   line-height: size(22);
+//   @include breakpoint(mobile576) {
+//     padding: size(12);
+//   }
+//   @include breakpoint(tab992) {
+//     min-width: size(250);
+//   }
+//   @include hover {
+//     background-color: $blue-green-600;
+//     color: $white;
+//   }
+// }
+// .contact-btn {
+//   @include setBgColor($blue-green-500, $white);
+//   text-align: center;
+//   padding: size(8);
+//   @include radius(8);
+//   text-align: right;
+//   leading-trim: both;
+//   color: $white;
+//   text-edge: cap;
+//   font-family: Inter;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: 22px;
+//   @include border(solid, 4, $blue-green-500);
+//   @include breakpoint(mobile576) {
+//     padding: size(12) size(12);
+//   }
+//   @include hover {
+//     @include setBgColor($white, $blue-green-500);
+//   }
+// }
+
+// .applynow {
+//   @include setBgColor($blue-green-500, $white);
+//   @include flex;
+//   padding: size(10) size(14);
+//   gap: size(10);
+//   display: inline-flex;
+//   @include radius(10);
+//   width: size(180);
+//   align-items: center;
+//   justify-content: center;
+//   @include border(solid, 5, $blue-green-500);
+//   font-size: size(16);
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: size(24);
+//   svg {
+//     path {
+//       @include transitionsall;
+//     }
+//   }
+//   @include hover {
+//     @include setBgColor(transparent, $blue-green-500);
+
+//     svg {
+//       path {
+//         stroke: $blue-green-500;
+//       }
+//     }
+//   }
+// }

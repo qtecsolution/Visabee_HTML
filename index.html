@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visabee Consultants</title>
   <!-- FAVICON-ICON -->
-  <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/svg+xml" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- BACK-TO-TOP-CSS -->
   <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
   <!-- BOOTSTRAP-CSS -->
@@ -17,8 +19,103 @@
 
 <body>
   <!-- HEADER-SECTION-START -->
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <div class="header-logo">
+          <img src="./assets/images/header/logo.svg" alt="logo">
+        </div>
+        <div class="destop">
+          <ul class="header-nav-list">
+            <li>
+              <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mission Vision</a></li>
+                <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                <li><a class="dropdown-item" href="#">Meet the expert</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Processing Countries</a>
+            </li>
+            <li>
+              <a href="#">Scholarship</a>
+            </li>
+            <li>
+              <a href="#">University & Courses</a>
+            </li>
+            <li>
+              <button class="primary-button-with-ico">
+                <span class="text">Appointment booking</span>
+                <i class="fa-solid fa-arrow-right icon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- mobail menu -->
+        <a class="btn mobail-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+          aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+        </a>
 
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body">
+            <ul>
+              <li class="mobail-list">
+                <div class="dropdown mt-3">
+                  <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    About
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mobail-list">
+                <a href="#">Services</a>
+              </li>
+
+              <li class="mobail-list">
+                <a href="#">Processing Countries</a>
+              </li>
+
+              <li class="mobail-list">
+                <a href="#">Scholarship</a>
+              </li>
+
+              <li class="mobail-list">
+                <a href="#">University & Courses</a>
+              </li>
+
+              <li class="mobail-list">
+                <button class="primary-button-with-ico">
+                  <span class="text">Appointment booking</span>
+                  <i class="fa-solid fa-arrow-right icon"></i>
+                </button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
   <!-- HEADER-SECTION-END -->
+
+
+
+  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button> -->
 
 
   <!-- FOOTER-SECTION-START -->
