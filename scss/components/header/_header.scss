@@ -1,0 +1,19 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.header {
+  background: $white;
+  @include border-single(bottom, solid, 1, $iconborder);
+
+  @include breakpoint(tab992) {
+    border-bottom: 0;
+  }
+
+  &-top {
+    padding: size(12) size(8);
+
+    @include breakpoint(tab992) {
+      padding: size(26) size(54);
+    }
+  }
+}
