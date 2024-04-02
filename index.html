@@ -28,10 +28,14 @@
         <div class="destop">
           <ul class="header-nav-list">
             <li>
-              <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+              <a href="#" class="dropdown-toggle d-flex align-items-center gap-2 " data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span>About</span>
+                <img src="./assets/images/header/arrowdown.svg" alt="">
+              </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Mission Vision</a></li>
-                <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                <li class=""><a class="dropdown-item" href="#">Company Profile</a></li>
                 <li><a class="dropdown-item" href="#">Meet the expert</a></li>
               </ul>
             </li>
@@ -66,15 +70,31 @@
           <div class="offcanvas-body">
             <ul>
               <li class="mobail-list">
-                <div class="dropdown mt-3">
-                  <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    About
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        About
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul class="">
+                          <li>
+                            <a href="">Mission Vision</a>
+                          </li>
+                          <li>
+                            <a href="">Company Profile</a>
+                          </li>
+                          <li>
+                            <a href="">Meet the expert</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </li>
 
@@ -146,13 +166,13 @@
           Event and University Visits
         </h2>
         <div class="row gap-3">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg">
             <img src="./assets/images/university-visits/university-visits1.png" alt="">
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg">
             <img src="./assets/images/university-visits/university-visits2.png" alt="">
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg">
             <img src="./assets/images/university-visits/university-visits3.png" alt="">
           </div>
         </div>

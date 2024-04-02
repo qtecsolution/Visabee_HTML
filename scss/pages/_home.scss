@@ -1,17 +1,36 @@
 @use "../global" as *;
 @use "../partials" as *;
 
-@include breakpoint(tablet991) {
-  .heading-text {
-    font-size: size(28);
-  }
-}
+
 .heading-text {
   color: $footerbg; //#12141D;
   font-family: $primaryfont;
-  font-size: size(36);
+  font-size: size(25);
   font-weight: 700;
   line-height: size(46);
+
+  @include breakpoint(mobile414) {
+    font-size: size(25);
+  }
+  @include breakpoint(mobile480) {
+    font-size: size(25);
+  }
+  @include breakpoint(mobile480) {
+    font-size: size(25);
+  }
+  @include breakpoint(mobile576) {
+    font-size: size(25);
+  }
+  @include breakpoint(mobile768) {
+    font-size: size(30);
+  }
+  @include breakpoint(tab992) {
+    font-size: size(36);
+  }
+
+  @include breakpoint(desktop1400) {
+    color: $black-950;
+  }
 }
 // Affiliated Partners START
 .affiliated-partners {

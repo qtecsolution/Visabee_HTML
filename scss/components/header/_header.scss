@@ -19,12 +19,42 @@
       gap: size(24);
       list-style: none;
       li {
+        .dropdown-toggle::after {
+          display: none;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+        }
+        .dropdown-menu {
+          min-width: size(224);
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          background-color: $white;
+          border: none;
+          border-radius: size(10);
+          :nth-of-type(2) {
+            border-top: 1px solid #f3f3f3;
+            border-bottom: 1px solid #f3f3f3;
+          }
+          li {
+            a {
+              padding: size(15) size(24);
+            }
+          }
+        }
         a {
           color: $neutral-900; //#3C3C3D
           font-family: $primaryfont;
-          font-size: size(16);
+          font-size: size(11);
           font-weight: 700;
           line-height: size(28);
+          @include breakpoint(desktop1200) {
+            font-size: size(16);
+          }
+          @include breakpoint(desktop1367) {
+            font-size: size(18);
+          }
         }
       }
     }
@@ -58,8 +88,26 @@
   .offcanvas-body {
     ul {
       list-style: none;
+      padding-left: 0;
       .mobail-list {
         margin-top: size(20);
+        .accordion-button {
+          color: $neutral-900; //#3C3C3D
+          font-family: $primaryfont;
+          font-size: size(12);
+          font-weight: 700;
+          line-height: size(28);
+        }
+        .accordion-button:not(.collapsed) {
+          color: $white;
+          background-color: $secondary-color-400;
+          padding: 10px;
+        }
+        .accordion-body {
+          ul {
+            padding-left: 0;
+          }
+        }
         a {
           color: $neutral-900; //#3C3C3D
           font-family: $primaryfont;
@@ -68,7 +116,7 @@
           line-height: size(28);
         }
         .text {
-          font-size: size(12);
+          font-size: size(10);
         }
       }
     }
