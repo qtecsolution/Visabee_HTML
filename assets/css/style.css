@@ -2090,6 +2090,108 @@ table tr td {
   }
 }
 
+.hero-section-inner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+@media screen and (min-width: 48rem) {
+  .hero-section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 61.9375rem) {
+  .hero-section-inner {
+    gap: 3.125rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .hero-section-inner {
+    flex-direction: row;
+    gap: 6.25rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .hero-section-inner {
+    gap: 16.625rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .hero-section-inner-text {
+    max-width: 249px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .hero-section-inner-text {
+    max-width: 449px;
+  }
+}
+.hero-section-inner-text .hero-button {
+  display: flex;
+  justify-content: center;
+}
+.hero-section-headding-text {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 36rem) {
+  .hero-section-headding-text {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .hero-section-headding-text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .hero-section-headding-text {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .hero-section-headding-text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .hero-section-headding-text {
+    font-size: 3rem;
+    line-height: 3.75rem; /* 125% */
+  }
+}
+.hero-section-text {
+  color: #444546;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  margin: 0.9375rem 0rem;
+}
+@media screen and (min-width: 48rem) {
+  .hero-section-text {
+    font-size: 0.9375rem;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .hero-section-text {
+    font-size: 1rem;
+    margin: 2.1875rem 0rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .hero-section-text {
+    font-size: 1.125rem;
+  }
+}
+
 .heading-text {
   color: #12141d;
   font-family: "Inter", sans-serif;
@@ -2125,11 +2227,6 @@ table tr td {
 @media screen and (min-width: 62rem) {
   .heading-text {
     font-size: 2.25rem;
-  }
-}
-@media screen and (min-width: 87.5rem) {
-  .heading-text {
-    color: #050505;
   }
 }
 
