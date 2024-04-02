@@ -3,7 +3,7 @@
 
 .footer {
   background: $footerbg;
-  padding: size(80) size(0);
+  padding-top: size(60);
 
   .text {
     color: $white;
@@ -133,10 +133,16 @@
       }
     }
   }
-  @include breakpoint(tab992) {
-    padding: size(120) size(8) size(60);
-    gap: size(70);
+  .copyright {
+    color: $white;
+    font-family: $primaryfont;
+    font-size: size(14);
+    padding: size(30) size(0);
   }
+  // @include breakpoint(tab992) {
+  //   padding: size(120) size(8) size(60);
+  //   gap: size(70);
+  // }
 
   // .footerdetail {
   //   @include flex-column;

@@ -1193,7 +1193,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
 
 .footer {
   background: #12141d;
-  padding: 5rem 0rem;
+  padding-top: 3.75rem;
 }
 .footer .text {
   color: hsl(0, 0%, 100%);
@@ -1313,11 +1313,11 @@ input[type=search]::-webkit-search-results-decoration:focus {
   font-weight: 700;
   line-height: 1.75rem;
 }
-@media screen and (min-width: 62rem) {
-  .footer {
-    padding: 7.5rem 0.5rem 3.75rem;
-    gap: 4.375rem;
-  }
+.footer .copyright {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  padding: 1.875rem 0rem;
 }
 
 .preloader {
@@ -2040,6 +2040,38 @@ table tr td {
     height: 2.875rem;
     padding: 0.625rem 1rem;
   }
+}
+
+@media screen and (max-width: 61.9375rem) {
+  .heading-text {
+    font-size: 1.75rem;
+  }
+}
+.heading-text {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+}
+
+.affiliated-partners {
+  margin: 7.5rem 0rem;
+}
+.affiliated-partners .heading-text {
+  margin-bottom: 1.5rem;
+}
+.affiliated-partners .innar-content {
+  border-radius: 73px;
+  background: #f7fbff;
+  padding: 2.375rem 3rem;
+}
+
+.university-visits {
+  margin: 5rem 0rem;
+}
+.university-visits .heading-text {
+  margin-bottom: 3.75rem;
 }
 
 html {

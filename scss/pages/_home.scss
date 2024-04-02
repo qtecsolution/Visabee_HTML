@@ -1,2 +1,35 @@
 @use "../global" as *;
 @use "../partials" as *;
+
+@include breakpoint(tablet991) {
+  .heading-text {
+    font-size: size(28);
+  }
+}
+.heading-text {
+  color: $footerbg; //#12141D;
+  font-family: $primaryfont;
+  font-size: size(36);
+  font-weight: 700;
+  line-height: size(46);
+}
+// Affiliated Partners START
+.affiliated-partners {
+  margin: size(120) size(0);
+  .heading-text {
+    margin-bottom: size(24);
+  }
+  .innar-content {
+    border-radius: 73px;
+    background: #f7fbff;
+    padding: size(38) size(48);
+  }
+}
+
+// Event and University Visits START
+.university-visits {
+  margin: size(80) size(0);
+  .heading-text {
+    margin-bottom: size(60);
+  }
+}
