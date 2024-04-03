@@ -2708,6 +2708,85 @@ table tr td {
   color: hsl(0, 0%, 100%);
 }
 
+.scholarships-list-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.scholarships-list-inner .left .scholarships-list-hedar {
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e7;
+  display: flex;
+  justify-content: space-between;
+}
+.scholarships-list-inner .left .scholarships-list-hedar .right {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 48rem) {
+  .scholarships-list-inner .left .scholarships-list-hedar .right {
+    margin-bottom: 0;
+  }
+}
+.scholarships-list-inner .left .scholarships-list-hedar .right-heding {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  line-height: 2.125rem;
+}
+.scholarships-list-inner .left .scholarships-list-hedar .right-pra {
+  margin-top: 8px;
+  color: #6a6b70;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+.scholarships-list-inner .left .scholarships-list-hedar .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .scholarships-list-inner .left .scholarships-list-hedar .left {
+    gap: 2.5rem;
+  }
+}
+.scholarships-list-inner .left .scholarships-list-hedar .left .view {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.scholarships-list-inner .left .page-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 80px;
+}
+@media screen and (min-width: 48rem) {
+  .scholarships-list-inner .left .page-btn {
+    gap: 24px;
+  }
+}
+.scholarships-list-inner .left .page-btn .button {
+  padding: 10px 18px;
+  border-radius: 9.606px;
+  border: 1.601px solid #f3f3f3;
+  color: #85868b;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.scholarships-list-inner .left .page-btn .button:hover {
+  border: 1.601px solid #076046;
+  background: #076046;
+  color: hsl(0, 0%, 100%);
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;

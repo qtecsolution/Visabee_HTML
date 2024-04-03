@@ -1,0 +1,88 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// scholarships-list
+
+.scholarships-list {
+  &-inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    .right{}
+    .left{
+      .scholarships-list-hedar {
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e6e6e7;
+        display: flex;
+        justify-content: space-between;
+    
+        .right {
+          margin-bottom: 20px;
+          @include breakpoint(mobile768) {
+            margin-bottom: 0;
+          }
+          &-heding {
+            color: $neutral-950; // #19191A
+            font-family: $primaryfont;
+            font-size: size(24);
+            text-align: left;
+            font-weight: 600;
+            line-height: size(34);
+          }
+          &-pra {
+            margin-top: 8px;
+            color: $neutral-500; // #6A6B70
+            font-family: $primaryfont;
+            font-size: size(13);
+            text-align: left;
+            font-weight: 600;
+            line-height: size(20);
+    
+          }
+        }
+    
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: size(20);
+          @include breakpoint(mobile768) {
+            gap: size(40);
+          }
+          .view {
+            display: flex;
+            gap: size(12);
+            align-items: center;
+          }
+        }
+      }
+    
+      .page-btn {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 80px;
+        @include breakpoint(mobile768) {
+          gap: 24px;
+        }
+        .button {
+          padding: 10px 18px;
+          border-radius: 9.606px;
+          border: 1.601px solid #f3f3f3;
+          color: $neutral-400; //#85868B
+          font-family: $primaryfont;
+          font-size: 24px;
+          font-weight: 500;
+          transition: all 0.5s ease;
+          &:hover {
+            border: 1.601px solid $primary-color-900;
+            background: $primary-color-900;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+}
