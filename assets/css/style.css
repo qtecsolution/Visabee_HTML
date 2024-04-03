@@ -2882,6 +2882,7 @@ table tr td {
   padding: 1.6875rem 2.5rem 2.375rem 1.625rem;
   margin-top: 24px;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .scholarships-list-inner .left .all-scholarships .singal-card:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

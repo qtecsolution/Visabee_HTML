@@ -88,6 +88,7 @@
           padding: size(27) size(40) size(38) size(26);
           margin-top: 24px;
           transition: all .5s ease;
+          cursor: pointer;
           &:hover{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           }
