@@ -1,0 +1,39 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// services-hero
+
+.services-hero {
+  &-text {
+    margin-top: size(60);
+    @include breakpoint(mobile768) {
+      margin-top: size(90);
+    }
+    @include breakpoint(tab992) {
+      margin-top: size(120);
+    }
+    &-heading {
+      color: $neutral-950; //#19191a
+      text-align: center;
+      font-family: $primaryfont;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 60px;
+      @include breakpoint(mobile768) {
+        font-size: 38px;
+      }
+      @include breakpoint(tab992) {
+        font-size: 48px;
+      }
+    }
+    &-pra {
+      max-width: 579px;
+      margin: 30px auto 60px auto;
+      color: $neutral-800; //#444546;
+      text-align: center;
+      font-family: $primaryfont;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

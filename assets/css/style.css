@@ -2305,6 +2305,47 @@ table tr td {
   margin-bottom: 3.75rem;
 }
 
+.services-hero-text {
+  margin-top: 3.75rem;
+}
+@media screen and (min-width: 48rem) {
+  .services-hero-text {
+    margin-top: 5.625rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .services-hero-text {
+    margin-top: 7.5rem;
+  }
+}
+.services-hero-text-heading {
+  color: #19191a;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 60px;
+}
+@media screen and (min-width: 48rem) {
+  .services-hero-text-heading {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .services-hero-text-heading {
+    font-size: 48px;
+  }
+}
+.services-hero-text-pra {
+  max-width: 579px;
+  margin: 30px auto 60px auto;
+  color: #444546;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
