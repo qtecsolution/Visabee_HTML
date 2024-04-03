@@ -88,11 +88,18 @@
     display: flex;
     justify-content: space-between;
     padding: size(4) size(4) size(4) size(16);
-    width: size(300);
     margin-top: size(24);
+    width: 100%;
+    @include breakpoint(desktop1200) {
+      width: size(300);
+    }
     input {
-      width: 100px;
+      width: 70px;
       background-color: transparent;
+
+      @include breakpoint(tab992) {
+        width: 100px;
+      }
     }
   }
 
@@ -126,9 +133,19 @@
         p {
           color: $white;
           font-family: $primaryfont;
-          font-size: size(18);
+          font-size: size(12);
           font-weight: 700;
           line-height: size(28);
+
+          @include breakpoint(mobile768) {
+            font-size: size(12);
+          }
+          @include breakpoint(tab992) {
+            font-size: size(14);
+          }
+          @include breakpoint(desktop1024) {
+            font-size: size(18);
+          }
         }
       }
     }

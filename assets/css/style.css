@@ -1321,12 +1321,22 @@ input[type=search]::-webkit-search-results-decoration:focus {
   display: flex;
   justify-content: space-between;
   padding: 0.25rem 0.25rem 0.25rem 1rem;
-  width: 18.75rem;
   margin-top: 1.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 75rem) {
+  .footer .footer-form {
+    width: 18.75rem;
+  }
 }
 .footer .footer-form input {
-  width: 100px;
+  width: 70px;
   background-color: transparent;
+}
+@media screen and (min-width: 62rem) {
+  .footer .footer-form input {
+    width: 100px;
+  }
 }
 .footer .contact-us {
   border-top: 1px solid #474954;
@@ -1359,9 +1369,24 @@ input[type=search]::-webkit-search-results-decoration:focus {
 .footer .contact-us-innar .contact-text p {
   color: hsl(0, 0%, 100%);
   font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.75rem;
+}
+@media screen and (min-width: 48rem) {
+  .footer .contact-us-innar .contact-text p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .footer .contact-us-innar .contact-text p {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .footer .contact-us-innar .contact-text p {
+    font-size: 1.125rem;
+  }
 }
 .footer .copyright {
   color: hsl(0, 0%, 100%);
@@ -2711,6 +2736,9 @@ table tr td {
 .scholarships-list-inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.scholarships-list-inner .left {
+  grid-column: 1/3;
 }
 .scholarships-list-inner .left .scholarships-list-hedar {
   align-items: center;
