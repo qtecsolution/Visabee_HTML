@@ -2365,9 +2365,14 @@ table tr td {
   color: #12141d;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 1.375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 2.125rem; /* 154.545% */
+}
+@media screen and (min-width: 62rem) {
+  .study-destination .inner-content .inner-country-card .country-card h4 {
+    font-size: 1.375rem;
+  }
 }
 
 .affiliated-partners {
@@ -2876,6 +2881,10 @@ table tr td {
   border: 1px solid #e6e6e7;
   padding: 1.6875rem 2.5rem 2.375rem 1.625rem;
   margin-top: 24px;
+  transition: all 0.5s ease;
+}
+.scholarships-list-inner .left .all-scholarships .singal-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .scholarships-list-inner .left .all-scholarships .singal-card figure img {
   max-width: 138px;
@@ -2955,6 +2964,33 @@ table tr td {
   border: 1.601px solid #076046;
   background: #076046;
   color: hsl(0, 0%, 100%);
+}
+
+.university-innar {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 48rem) {
+  .university-innar {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .university-innar {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 84px;
+  }
+}
+.university-innar .university-card {
+  background: #f6f8fa;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.university-innar .university-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 html {

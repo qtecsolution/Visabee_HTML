@@ -1,0 +1,26 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// university-innar
+.university-innar {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 30px;
+  @include breakpoint(mobile768) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+  }
+  @include breakpoint(tab992) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 84px;
+  }
+  .university-card {
+    background: #f6f8fa;
+    cursor: pointer;
+    transition: all .5s ease;
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+}

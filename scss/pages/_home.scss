@@ -256,9 +256,19 @@
           color: #12141d;
           text-align: center;
           font-family: $primaryfont;
-          font-size: size(22);
+          font-size: size(14);
           font-weight: 700;
           line-height: size(34); /* 154.545% */
+
+          // @include breakpoint(tab992) {
+          //   font-size: size(22);
+          // }
+          // @include breakpoint(mobile768) {
+          //   grid-template-columns: repeat(3, 1fr);
+          // }
+          @include breakpoint(tab992) {
+            font-size: size(22);
+          }
         }
       }
     }
