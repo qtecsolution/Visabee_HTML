@@ -2345,6 +2345,188 @@ table tr td {
   font-size: 18px;
   line-height: 28px;
 }
+.services-hero .inner-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media screen and (min-width: 48rem) {
+  .services-hero .inner-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 62rem) {
+  .services-hero .inner-services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.services-hero .inner-services-card {
+  height: 216px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.5px solid #ece8da;
+  padding: 3.1875rem 0rem;
+}
+.services-hero .inner-services-card .img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.services-hero .inner-services-card .text {
+  color: var(--Neutral-950, #19191a);
+  text-align: center;
+  /* Bold/24px */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+}
+.services-hero .inner-services2 {
+  margin-top: 24px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+@media screen and (min-width: 48rem) {
+  .services-hero .inner-services2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 62rem) {
+  .services-hero .inner-services2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.services-hero .inner-services2-card {
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 0.5px solid #ece8da;
+  padding: 3.4375rem 0rem 3.4375rem 2.5rem;
+}
+.services-hero .inner-services2-card .img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.services-hero .inner-services2-card .text {
+  color: var(--Neutral-950, #19191a);
+  text-align: center;
+  /* Bold/24px */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+}
+
+.book-session {
+  margin: 3.75rem 0rem;
+}
+@media screen and (min-width: 48rem) {
+  .book-session {
+    margin: 5.625rem 0rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .book-session {
+    margin: 7.5rem 0rem;
+  }
+}
+.book-session-inner {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+@media screen and (min-width: 62rem) {
+  .book-session-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.book-session-inner-card1 {
+  border-radius: 40px;
+  background: #ecfde2;
+  padding: 3.25rem 3.75rem;
+}
+.book-session-inner-card1 .heading {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+}
+@media screen and (min-width: 48rem) {
+  .book-session-inner-card1 .heading {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .book-session-inner-card1 .heading {
+    font-size: 2.25rem;
+  }
+}
+.book-session-inner-card1 .pra {
+  color: #444546;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 1.875rem 0rem 2.5rem 0rem;
+}
+.book-session-inner-card2 {
+  border-radius: 40px;
+  background: #faf8f1;
+  padding: 4.6875rem 3.75rem;
+}
+.book-session-inner-card2 .heading {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+@media screen and (min-width: 48rem) {
+  .book-session-inner-card2 .heading {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .book-session-inner-card2 .heading {
+    font-size: 2.625rem;
+  }
+}
+.book-session-inner-card2 .pra {
+  color: #444546;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 1.875rem 0rem 2.5rem 0rem;
+}
+.book-session-inner-card2 .number-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.book-session-inner-card2 .number-card .text {
+  color: #5b5b5f;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+.book-session-inner-card2 .number-card .number {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
 
 html {
   box-sizing: border-box;

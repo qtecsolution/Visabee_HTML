@@ -2,7 +2,6 @@
 @use "../partials" as *;
 
 // services-hero
-
 .services-hero {
   &-text {
     margin-top: size(60);
@@ -34,6 +33,178 @@
       font-family: $primaryfont;
       font-size: 18px;
       line-height: 28px;
+    }
+  }
+  .inner-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @include breakpoint(mobile768) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint(tab992) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &-card {
+      height: 216px;
+      border-radius: 20px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 0.5px solid #ece8da;
+      padding: size(51) size(0);
+      .img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: size(24);
+      }
+      .text {
+        color: var(--Neutral-950, #19191a);
+        text-align: center;
+
+        /* Bold/24px */
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; /* 141.667% */
+      }
+    }
+  }
+
+  .inner-services2 {
+    margin-top: 24px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+
+    @include breakpoint(mobile768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(tab992) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &-card {
+      border-radius: 20px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border: 0.5px solid #ece8da;
+      padding: size(55) size(0) size(55) size(40);
+      .img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: size(24);
+      }
+      .text {
+        color: var(--Neutral-950, #19191a);
+        text-align: center;
+
+        /* Bold/24px */
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; /* 141.667% */
+      }
+    }
+  }
+}
+
+// book-session
+.book-session {
+  margin: size(60) size(0);
+  @include breakpoint(mobile768) {
+    margin: size(90) size(0);
+  }
+  @include breakpoint(tab992) {
+    margin: size(120) size(0);
+  }
+  &-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+
+    @include breakpoint(tab992) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-card1 {
+      border-radius: 40px;
+      background: #ecfde2;
+      padding: size(52) size(60);
+
+      .heading {
+        color: $neutral-950; //#19191A
+        font-family: $primaryfont;
+        font-size: size(25);
+        font-weight: 700;
+        line-height: size(46);
+        @include breakpoint(mobile768) {
+          font-size: size(30);
+        }
+        @include breakpoint(tab992) {
+          font-size: size(36);
+        }
+      }
+      .pra {
+        color: $neutral-800; //#444546
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28);
+        margin: size(30) size(0) size(40) size(0);
+      }
+    }
+
+    &-card2 {
+      border-radius: 40px;
+      background: #faf8f1;
+      padding: size(75) size(60);
+      .heading {
+        color: $neutral-950; //#19191A
+        font-family: $primaryfont;
+        font-size: size(28);
+        font-weight: 700;
+        line-height: size(48);
+        @include breakpoint(mobile768) {
+          font-size: size(32);
+        }
+        @include breakpoint(tab992) {
+          font-size: size(42);
+        }
+      }
+
+      .pra {
+        color: $neutral-800; //#444546
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28);
+        margin: size(30) size(0) size(40) size(0);
+      }
+
+      .number-card {
+        display: flex;
+        gap: size(24);
+        align-items: center;
+        .text {
+          color: $neutral-600; //#5B5B5F
+          font-family: $primaryfont;
+          font-size: size(13);
+          line-height: size(22);
+          font-weight: 600;
+        }
+        .number {
+          color: #12141d;
+          font-family: $primaryfont;
+          font-size: size(18);
+          line-height: size(28);
+          font-weight: 700;
+        }
+      }
     }
   }
 }
