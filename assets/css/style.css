@@ -2528,6 +2528,186 @@ table tr td {
   font-weight: 700;
 }
 
+.country-list-hedar {
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e7;
+}
+@media screen and (min-width: 48rem) {
+  .country-list-hedar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.country-list-hedar .right {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 48rem) {
+  .country-list-hedar .right {
+    margin-bottom: 0;
+  }
+}
+.country-list-hedar .right-heding {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 2.125rem;
+}
+@media screen and (min-width: 48rem) {
+  .country-list-hedar .right-heding {
+    text-align: left;
+  }
+}
+.country-list-hedar .right-pra {
+  margin-top: 8px;
+  color: #6a6b70;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .country-list-hedar .right-pra {
+    text-align: left;
+  }
+}
+.country-list-hedar .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .country-list-hedar .left {
+    gap: 2.5rem;
+  }
+}
+.country-list-hedar .left form {
+  width: 290px;
+  border-radius: 11px;
+  border: 1px solid #e6e6e7;
+  background: #fff;
+  padding: 0.8125rem 1.125rem;
+  box-shadow: 0px 4px 4px 0px rgba(239, 239, 239, 0.25);
+}
+@media screen and (min-width: 62rem) {
+  .country-list-hedar .left form {
+    width: 503px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .country-list-hedar .left form {
+    width: 703px;
+  }
+}
+.country-list-hedar .left form i {
+  color: #85868b;
+  margin-right: 8px;
+}
+.country-list-hedar .left form input {
+  font-size: 0.625rem;
+}
+@media screen and (min-width: 36rem) {
+  .country-list-hedar .left form input {
+    font-size: 1rem;
+  }
+}
+.country-list-hedar .left form input ::-moz-placeholder {
+  color: #cfcfd2;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.625rem;
+}
+.country-list-hedar .left form input ::placeholder {
+  color: #cfcfd2;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.625rem;
+}
+@media screen and (min-width: 36rem) {
+  .country-list-hedar .left form input ::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .country-list-hedar .left form input ::placeholder {
+    font-size: 1rem;
+  }
+}
+.country-list-hedar .left .view {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.country-list .all-country {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 48rem) {
+  .country-list .all-country {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 75rem) {
+  .country-list .all-country {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.country-list .all-country .signal-country {
+  border: 1px solid #e6e6e7;
+  padding: 4.0625rem 2.125rem;
+}
+.country-list .all-country .signal-country .img {
+  display: flex;
+  justify-content: center;
+}
+.country-list .all-country .signal-country .heading {
+  color: #12141d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.375rem;
+  margin: 1.375rem 0rem;
+}
+.country-list .all-country .signal-country .pra {
+  color: #12141d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+.country-list .page-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 80px;
+}
+@media screen and (min-width: 48rem) {
+  .country-list .page-btn {
+    gap: 24px;
+  }
+}
+.country-list .page-btn .button {
+  padding: 10px 18px;
+  border-radius: 9.606px;
+  border: 1.601px solid #f3f3f3;
+  color: #85868b;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.country-list .page-btn .button:hover {
+  border: 1.601px solid #076046;
+  background: #076046;
+  color: hsl(0, 0%, 100%);
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;

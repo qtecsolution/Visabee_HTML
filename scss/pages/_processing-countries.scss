@@ -1,2 +1,158 @@
 @use "../global" as *;
 @use "../partials" as *;
+
+// country-list
+.country-list {
+  &-hedar {
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e7;
+
+    @include breakpoint(mobile768) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .right {
+      margin-bottom: 20px;
+      @include breakpoint(mobile768) {
+        margin-bottom: 0;
+      }
+      &-heding {
+        color: $neutral-950; // #19191A
+        font-family: $primaryfont;
+        font-size: size(24);
+        text-align: center;
+        font-weight: 600;
+        line-height: size(34);
+        @include breakpoint(mobile768) {
+          text-align: left;
+        }
+      }
+      &-pra {
+        margin-top: 8px;
+        color: $neutral-500; // #6A6B70
+        font-family: $primaryfont;
+        font-size: size(13);
+        text-align: center;
+        font-weight: 600;
+        line-height: size(20);
+        @include breakpoint(mobile768) {
+          text-align: left;
+        }
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: size(20);
+      @include breakpoint(mobile768) {
+        gap: size(40);
+      }
+
+      form {
+        width: 290px;
+        @include breakpoint(tab992) {
+          width: 503px;
+        }
+        @include breakpoint(desktop1200) {
+          width: 703px;
+        }
+        border-radius: 11px;
+        border: 1px solid #e6e6e7;
+        background: #fff;
+        padding: size(13) size(18);
+        box-shadow: 0px 4px 4px 0px rgba(239, 239, 239, 0.25);
+        i {
+          color: #85868b;
+          margin-right: 8px;
+        }
+        input {
+          font-size: size(10);
+          @include breakpoint(mobile576) {
+            font-size: size(16);
+          }
+          ::placeholder {
+            color: $neutral-200; // #CFCFD2);
+            font-family: $primaryfont;
+            font-size: size(12);
+            line-height: size(26);
+            @include breakpoint(mobile576) {
+              font-size: size(16);
+            }
+          }
+        }
+      }
+      .view {
+        display: flex;
+        gap: size(12);
+        align-items: center;
+      }
+    }
+  }
+
+  .all-country {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    @include breakpoint(mobile768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(desktop1200) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .signal-country {
+      border: 1px solid #e6e6e7;
+      padding: size(65) size(34);
+      .img {
+        display: flex;
+        justify-content: center;
+      }
+      .heading {
+        color: #12141d;
+        text-align: center;
+        font-family: $primaryfont;
+        font-size: size(28);
+        font-weight: 600;
+        line-height: size(38);
+        margin: size(22) size(0);
+      }
+      .pra {
+        color: #12141d;
+        text-align: center;
+        font-family: $primaryfont;
+        font-size: size(17);
+        font-style: normal;
+        line-height: size(28);
+      }
+    }
+  }
+
+  .page-btn {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 80px;
+    @include breakpoint(mobile768) {
+      gap: 24px;
+    }
+    .button {
+      padding: 10px 18px;
+      border-radius: 9.606px;
+      border: 1.601px solid #f3f3f3;
+      color: $neutral-400; //#85868B
+      font-family: $primaryfont;
+      font-size: 24px;
+      font-weight: 500;
+      transition: all 0.5s ease;
+      &:hover {
+        border: 1.601px solid $primary-color-900;
+        background: $primary-color-900;
+        color: $white;
+      }
+    }
+  }
+}
