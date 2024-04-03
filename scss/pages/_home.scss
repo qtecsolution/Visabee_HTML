@@ -3,6 +3,7 @@
 
 // Hero section start
 .hero-section {
+  padding: size(60) size(0);
   &-inner {
     display: flex;
     flex-direction: column-reverse;
@@ -32,15 +33,14 @@
       @include breakpoint(desktop1024) {
         max-width: 449px;
       }
-      .hero-button{
+      .hero-button {
         display: flex;
         justify-content: center;
-        @include breakpoint(mobile600) {
-          justify-content: flex-start;
+        @include breakpoint(mobile576) {
+          display: block;
         }
       }
     }
-
   }
 
   &-headding-text {
@@ -113,6 +113,155 @@
   }
   @include breakpoint(tab992) {
     font-size: size(36);
+  }
+}
+
+// about-us section
+// .about-us {
+//   .about-us-inner {
+//     .about-img-position {
+//       @include breakpoint(desktop1200) {
+//         top: -92px;
+//         left: 47%;
+//       }
+//       @include breakpoint(desktop1366) {
+//         left: 52%;
+//       }
+//       @include breakpoint(desktop1400) {
+//         left: 54%;
+//       }
+//     }
+//     max-width: 1450px;
+//     margin: 0 auto;
+//     border-radius: size(40);
+//     background: $primary-color-50;
+//     padding-left: size(134);
+//     @include breakpoint(tab992) {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//     @include breakpoint(desktop1200) {
+//       padding-left: size(68);
+//     }
+
+//     .about-us-inner-text {
+//       display: flex;
+//       flex-direction: column;
+//       gap: size(75);
+//       @include breakpoint(tab992) {
+//         max-width: size(449);
+//       }
+//       @include breakpoint(mobile768) {
+//         gap: size(40);
+//       }
+//       .about {
+//         margin-top: size(78);
+//         @include breakpoint(mobile768) {
+//           margin-top: size(50);
+//         }
+//         @include breakpoint(desktop1400) {
+//           // padding-left: size();
+//         }
+//         @include breakpoint(desktop1600) {
+//         }
+//       }
+//       h2.headding-text {
+//         color: $neutral-950; //#19191a;
+//         font-family: $primaryfont;
+//         font-size: size(42);
+//         font-weight: 700;
+//         line-height: size(48);
+//         margin-bottom: size(30);
+//         @include breakpoint(mobile768) {
+//           margin-bottom: size(15);
+//         }
+//       }
+
+//       p.par-text {
+//         color: $neutral-800; //#444546;
+//         font-family: $primaryfont;
+//         font-size: size(18);
+//         line-height: size(28);
+//       }
+//     }
+//   }
+
+//   .about-us-inner-img {
+//     .card-position {
+//       bottom: -49px;
+//       right: size(42);
+//       @include breakpoint(mobile768) {
+//         right: size(22);
+//       }
+//       .sirvice-card-body {
+//         gap: size(28);
+//         .sirvice-card {
+//           width: size(230);
+//           padding: size(32) size(28);
+//           border-radius: size(16);
+//           background: #fff;
+//           .inner-card {
+//             align-items: center;
+//           }
+//           h3 {
+//             color: $footerbg;
+//             font-family: $primaryfont;
+//             font-size: size(18);
+//             font-weight: 700;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// Pick a Study Destination start
+.study-destination {
+  .inner-content {
+    background-image: url(../../assets/images/home/study-destination.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    .heading-text {
+      padding-top: size(196);
+      color: $neutral-950; //#19191a
+      font-family: $primaryfont;
+      font-size: size(42);
+      font-weight: 700;
+      line-height: size(48);
+    }
+    .pra-text {
+      max-width: size(695);
+      margin: 0 auto;
+      margin-top: size(30);
+      color: $neutral-800; //#444546
+      text-align: center;
+      font-family: $primaryfont;
+      font-size: size(18);
+      line-height: size(28);
+      margin-bottom: size(60);
+    }
+
+    .inner-country-card {
+      display: flex;
+      justify-content: center;
+      gap: 31px;
+      .country-card {
+        border-radius: size(42);
+        background: #fff;
+        padding: size(12) size(28) size(12) size(12);
+        gap: size(8);
+        align-items: center;
+        h4 {
+          color: #12141d;
+          text-align: center;
+          font-family: $primaryfont;
+          font-size: size(22);
+          font-weight: 700;
+          line-height: size(34); /* 154.545% */
+        }
+      }
+    }
   }
 }
 // Affiliated Partners START

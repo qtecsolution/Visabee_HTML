@@ -2,7 +2,10 @@
 @use "../../partials" as *;
 
 .header {
-  background: linear-gradient(180deg, #fff 0%, #e8f4ff 100%);
+  background: linear-gradient(360deg, #fff 0%, #e8f4ff 100%);
+  &-inner-nav {
+    @include border-single(bottom, solid, 1, $changeborder);
+  }
   &-nav {
     display: flex;
     justify-content: space-between;
@@ -59,7 +62,6 @@
       }
     }
   }
-  @include border-single(bottom, solid, 1, $changeborder);
 
   @include breakpoint(tab992) {
     .mobail-menu {
