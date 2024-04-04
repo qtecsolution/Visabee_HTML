@@ -107,6 +107,11 @@
     .signal-country {
       border: 1px solid #e6e6e7;
       padding: size(65) size(34);
+      cursor: pointer;
+      transition: all .5s ease;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
       .img {
         display: flex;
         justify-content: center;

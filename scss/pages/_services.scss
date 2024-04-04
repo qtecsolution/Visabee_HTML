@@ -55,6 +55,11 @@
       justify-content: center;
       border: 0.5px solid #ece8da;
       padding: size(51) size(0);
+      cursor: pointer;
+      transition: all .5s ease;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
       .img {
         display: flex;
         justify-content: center;
@@ -95,6 +100,11 @@
       gap: 24px;
       border: 0.5px solid #ece8da;
       padding: size(55) size(0) size(55) size(40);
+      cursor: pointer;
+      transition: all .5s ease;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
       .img {
         display: flex;
         justify-content: center;

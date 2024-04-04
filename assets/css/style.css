@@ -1012,6 +1012,7 @@ button:focus,
   font-size: 0.6875rem;
   font-weight: 700;
   line-height: 1.75rem;
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 75rem) {
   .header-nav-list li a {
@@ -1022,6 +1023,9 @@ button:focus,
   .header-nav-list li a {
     font-size: 1.125rem;
   }
+}
+.header-nav-list li a:hover {
+  color: #00c07e;
 }
 @media screen and (min-width: 62rem) {
   .header .mobail-menu {
@@ -1060,7 +1064,7 @@ button:focus,
 }
 .header .offcanvas-body ul .mobail-list .accordion-button:not(.collapsed) {
   color: hsl(0, 0%, 100%);
-  background-color: #568eff;
+  background-color: #00c07e;
   padding: 10px;
 }
 .header .offcanvas-body ul .mobail-list .accordion-body ul {
@@ -1072,6 +1076,10 @@ button:focus,
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.75rem;
+  transition: all 0.5s ease;
+}
+.header .offcanvas-body ul .mobail-list a:hover {
+  color: #00c07e;
 }
 .header .offcanvas-body ul .mobail-list .text {
   font-size: 0.625rem;
@@ -2375,6 +2383,49 @@ table tr td {
   }
 }
 
+.student-achievement {
+  margin-top: 120px;
+}
+.student-achievement #carouselExample .carousel-control-prev,
+.student-achievement #carouselExample .carousel-control-next {
+  top: 38%;
+  background-color: hsl(0, 0%, 100%);
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #12141d;
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement #carouselExample .carousel-control-prev,
+  .student-achievement #carouselExample .carousel-control-next {
+    top: 70%;
+  }
+}
+.student-achievement #carouselExample .carousel-control-prev i,
+.student-achievement #carouselExample .carousel-control-next i {
+  font-size: 20px;
+  color: #12141D;
+}
+.student-achievement #carouselExample .carousel-control-prev {
+  left: 2%;
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement #carouselExample .carousel-control-prev {
+    left: 40%;
+  }
+}
+.student-achievement #carouselExample .carousel-control-next {
+  right: 2%;
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement #carouselExample .carousel-control-next {
+    right: 40%;
+  }
+}
+
 .affiliated-partners {
   margin: 7.5rem 0rem;
 }
@@ -2458,6 +2509,11 @@ table tr td {
   justify-content: center;
   border: 0.5px solid #ece8da;
   padding: 3.1875rem 0rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.services-hero .inner-services-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .services-hero .inner-services-card .img {
   display: flex;
@@ -2499,6 +2555,11 @@ table tr td {
   gap: 24px;
   border: 0.5px solid #ece8da;
   padding: 3.4375rem 0rem 3.4375rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.services-hero .inner-services2-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .services-hero .inner-services2-card .img {
   display: flex;
@@ -2748,6 +2809,11 @@ table tr td {
 .country-list .all-country .signal-country {
   border: 1px solid #e6e6e7;
   padding: 4.0625rem 2.125rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.country-list .all-country .signal-country:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .country-list .all-country .signal-country .img {
   display: flex;
@@ -2992,6 +3058,29 @@ table tr td {
 }
 .university-innar .university-card:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.asked-questions-inner .accordion .accordion-item {
+  border: none;
+}
+.asked-questions-inner .accordion .accordion-item .accordion-button {
+  color: #3c3c3d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  border-radius: 10px;
+  border: 1px solid #e6e6e7;
+  background: #f5f5f6;
+  padding: 0.9375rem 1.25rem;
+}
+.asked-questions-inner .accordion .accordion-item .accordion-body {
+  color: #4d4d51;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #e6e6e7;
+  border-radius: 10px;
 }
 
 html {

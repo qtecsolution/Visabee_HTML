@@ -58,6 +58,10 @@
           @include breakpoint(desktop1367) {
             font-size: size(18);
           }
+          transition: all .5s ease;
+          &:hover{
+            color: $primary-color-600;
+          }
         }
       }
     }
@@ -102,7 +106,7 @@
         }
         .accordion-button:not(.collapsed) {
           color: $white;
-          background-color: $secondary-color-400;
+          background-color: $primary-color-600;
           padding: 10px;
         }
         .accordion-body {
@@ -116,6 +120,11 @@
           font-size: size(12);
           font-weight: 700;
           line-height: size(28);
+
+          transition: all .5s ease;
+          &:hover{
+            color: $primary-color-600;
+          }
         }
         .text {
           font-size: size(10);
