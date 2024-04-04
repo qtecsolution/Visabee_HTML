@@ -27,7 +27,6 @@
           width: 99%;
           .nice-select-dropdown {
             width: 100%;
-
           }
           .current {
             margin-top: 10px;
@@ -35,7 +34,7 @@
         }
       }
 
-      .level-country{
+      .level-country {
         .nice-select {
           background-color: #fafafa;
           border-radius: 12px;
@@ -50,7 +49,6 @@
           width: 100%;
           .nice-select-dropdown {
             width: 100%;
-
           }
           .current {
             margin-top: 10px;
@@ -74,12 +72,72 @@
           font-size: size(16);
         }
       }
-      .inner-button{width: 100%;}
+      .inner-button {
+        width: 100%;
+      }
     }
   }
 }
 
 // contact-details
-.contact-details{
-  &-inner{}
+.contact-details {
+  margin-bottom: 120px;
+  &-inner {
+    border-radius: 24px;
+
+    @include breakpoint(tab992) {
+      background: $primary-color-50; // #edfff9
+      border-top: 1px solid $neutral-100; // #e6e6e7
+      border-bottom: 1px solid $neutral-100; // #e6e6e7
+      border-left: 1px solid $neutral-100; // #e6e6e7
+    }
+
+    .left {
+      padding: 60px;
+      border-radius: 24px;
+      border: 1px solid $neutral-100; // #e6e6e7
+      background: $primary-color-50; // #edfff9
+      @include breakpoint(tab992) {
+        border: none;
+        background: transparent;
+      }
+
+      h2 {
+        color: $neutral-950; //#19191a
+        font-family: $primaryfont;
+        font-size: size(24);
+        font-weight: 600;
+        line-height: 34px;
+      }
+      p {
+        color: $neutral-600; // #5b5b5f
+        font-family: $primaryfont;
+        font-size: size(16);
+        line-height: 26px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+      span {
+        color: $neutral-600; // #5b5b5f
+        font-family: $primaryfont;
+        font-size: size(16);
+        line-height: 26px;
+      }
+      .website {
+        border-bottom: 1px solid $neutral-100;
+      }
+    }
+
+    .right {
+      iframe {
+        height: 415px;
+        border-radius: 24px;
+        @include breakpoint(tab992) {
+          border-radius: 0px;
+          border-top-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+        }
+      }
+    }
+  }
 }
