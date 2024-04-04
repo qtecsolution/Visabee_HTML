@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: size(24) size(0);
+    // z-index: 99999999999999;
 
     .destop {
       display: none;
@@ -58,8 +59,8 @@
           @include breakpoint(desktop1367) {
             font-size: size(18);
           }
-          transition: all .5s ease;
-          &:hover{
+          transition: all 0.5s ease;
+          &:hover {
             color: $primary-color-600;
           }
         }
@@ -121,8 +122,8 @@
           font-weight: 700;
           line-height: size(28);
 
-          transition: all .5s ease;
-          &:hover{
+          transition: all 0.5s ease;
+          &:hover {
             color: $primary-color-600;
           }
         }

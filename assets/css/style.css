@@ -1412,10 +1412,11 @@ input[type=search]::-webkit-search-results-decoration:focus {
 .footer .footer-form input {
   width: 70px;
   background-color: transparent;
+  color: hsl(0, 0%, 100%);
 }
 @media screen and (min-width: 62rem) {
   .footer .footer-form input {
-    width: 100px;
+    width: 80%;
   }
 }
 .footer .contact-us {
@@ -2352,12 +2353,32 @@ table tr td {
   background-position: bottom;
 }
 .study-destination .inner-content .heading-text {
-  padding-top: 12.25rem;
+  padding-top: 1.25rem;
   color: #19191a;
   font-family: "Inter", sans-serif;
   font-size: 2.625rem;
   font-weight: 700;
   line-height: 3rem;
+}
+@media screen and (min-width: 36rem) {
+  .study-destination .inner-content .heading-text {
+    padding-top: 3.125rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .study-destination .inner-content .heading-text {
+    padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .study-destination .inner-content .heading-text {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .study-destination .inner-content .heading-text {
+    padding-top: 9.375rem;
+  }
 }
 .study-destination .inner-content .pra-text {
   max-width: 43.4375rem;
@@ -2370,19 +2391,29 @@ table tr td {
   line-height: 1.75rem;
   margin-bottom: 3.75rem;
 }
-.study-destination .inner-content .inner-country-card {
+.study-destination .inner-content .inner-country-card1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 31px;
 }
-.study-destination .inner-content .inner-country-card .country-card {
+@media screen and (min-width: 48rem) {
+  .study-destination .inner-content .inner-country-card1 {
+    flex-wrap: nowrap;
+  }
+}
+.study-destination .inner-content .inner-country-card1 .country-card {
   border-radius: 2.625rem;
   background: #fff;
   padding: 0.75rem 1.75rem 0.75rem 0.75rem;
   gap: 0.5rem;
   align-items: center;
+  transition: all 0.5s ease;
 }
-.study-destination .inner-content .inner-country-card .country-card h4 {
+.study-destination .inner-content .inner-country-card1 .country-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.study-destination .inner-content .inner-country-card1 .country-card h4 {
   color: #12141d;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -2390,10 +2421,65 @@ table tr td {
   font-weight: 700;
   line-height: 2.125rem; /* 154.545% */
 }
+.study-destination .inner-content .inner-country-card2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 31px;
+}
 @media screen and (min-width: 62rem) {
-  .study-destination .inner-content .inner-country-card .country-card h4 {
-    font-size: 1.375rem;
+  .study-destination .inner-content .inner-country-card2 {
+    flex-wrap: nowrap;
   }
+}
+.study-destination .inner-content .inner-country-card2 .country-card {
+  border-radius: 2.625rem;
+  background: #fff;
+  padding: 0.75rem 1.75rem 0.75rem 0.75rem;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.study-destination .inner-content .inner-country-card2 .country-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.study-destination .inner-content .inner-country-card2 .country-card h4 {
+  color: #12141d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 2.125rem; /* 154.545% */
+}
+.study-destination .inner-content .inner-country-card3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 31px;
+}
+@media screen and (min-width: 48rem) {
+  .study-destination .inner-content .inner-country-card3 {
+    flex-wrap: nowrap;
+  }
+}
+.study-destination .inner-content .inner-country-card3 .country-card {
+  border-radius: 2.625rem;
+  background: #fff;
+  padding: 0.75rem 1.75rem 0.75rem 0.75rem;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.study-destination .inner-content .inner-country-card3 .country-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.study-destination .inner-content .inner-country-card3 .country-card h4 {
+  color: #12141d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 2.125rem; /* 154.545% */
 }
 
 .student-achievement {
@@ -2420,7 +2506,7 @@ table tr td {
 .student-achievement #carouselExample .carousel-control-prev i,
 .student-achievement #carouselExample .carousel-control-next i {
   font-size: 20px;
-  color: #12141D;
+  color: #12141d;
 }
 .student-achievement #carouselExample .carousel-control-prev {
   left: 2%;
@@ -2449,6 +2535,37 @@ table tr td {
   border-radius: 73px;
   background: #f7fbff;
   padding: 2.375rem 3rem;
+}
+
+.media-events-header .left {
+  max-width: 520px;
+}
+.media-events-header .left h1 {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.media-events-header .left p {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.media-events-header .right {
+  display: flex;
+  gap: 20px;
+}
+.media-events-header .right button {
+  width: 76px;
+  height: 76px;
+  fill: #fff;
+  border: 1px solid #e6e6e7;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .university-visits {

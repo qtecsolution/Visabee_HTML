@@ -223,12 +223,25 @@
     background-size: cover;
     background-position: bottom;
     .heading-text {
-      padding-top: size(196);
+      padding-top: size(20);
       color: $neutral-950; //#19191a
       font-family: $primaryfont;
       font-size: size(42);
       font-weight: 700;
       line-height: size(48);
+
+      @include breakpoint(mobile576) {
+        padding-top: size(50);
+      }
+      @include breakpoint(mobile768) {
+        padding-top: size(80);
+      }
+      @include breakpoint(tab992) {
+        padding-top: size(120);
+      }
+      @include breakpoint(desktop1024) {
+        padding-top: size(150);
+      }
     }
     .pra-text {
       max-width: size(695);
@@ -242,16 +255,24 @@
       margin-bottom: size(60);
     }
 
-    .inner-country-card {
+    .inner-country-card1 {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 31px;
+      @include breakpoint(mobile768) {
+        flex-wrap: nowrap;
+      }
       .country-card {
         border-radius: size(42);
         background: #fff;
         padding: size(12) size(28) size(12) size(12);
         gap: size(8);
         align-items: center;
+        transition: all 0.5s ease;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
         h4 {
           color: #12141d;
           text-align: center;
@@ -259,16 +280,64 @@
           font-size: size(14);
           font-weight: 700;
           line-height: size(34); /* 154.545% */
+        }
+      }
+    }
 
-          // @include breakpoint(tab992) {
-          //   font-size: size(22);
-          // }
-          // @include breakpoint(mobile768) {
-          //   grid-template-columns: repeat(3, 1fr);
-          // }
-          @include breakpoint(tab992) {
-            font-size: size(22);
-          }
+    .inner-country-card2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 31px;
+      @include breakpoint(tab992) {
+        flex-wrap: nowrap;
+      }
+      .country-card {
+        border-radius: size(42);
+        background: #fff;
+        padding: size(12) size(28) size(12) size(12);
+        gap: size(8);
+        align-items: center;
+        transition: all 0.5s ease;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        h4 {
+          color: #12141d;
+          text-align: center;
+          font-family: $primaryfont;
+          font-size: size(14);
+          font-weight: 700;
+          line-height: size(34); /* 154.545% */
+        }
+      }
+    }
+
+    .inner-country-card3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 31px;
+      @include breakpoint(mobile768) {
+        flex-wrap: nowrap;
+      }
+      .country-card {
+        border-radius: size(42);
+        background: #fff;
+        padding: size(12) size(28) size(12) size(12);
+        gap: size(8);
+        align-items: center;
+        transition: all 0.5s ease;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        h4 {
+          color: #12141d;
+          text-align: center;
+          font-family: $primaryfont;
+          font-size: size(14);
+          font-weight: 700;
+          line-height: size(34); /* 154.545% */
         }
       }
     }
@@ -293,9 +362,9 @@
       @include breakpoint(tab992) {
         top: 70%;
       }
-      i{
+      i {
         font-size: 20px;
-        color: #12141D;
+        color: #12141d;
       }
     }
 
@@ -332,7 +401,41 @@
     padding: size(38) size(48);
   }
 }
-
+// Media and Events
+.media-events {
+  &-header {
+    .left {
+      max-width: 520px;
+      h1 {
+        color: #12141d;
+        font-family: $primaryfont;
+        font-size: size(42);
+        font-weight: 700;
+        line-height: size(48);
+      }
+      p {
+        color: #12141d;
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28);
+      }
+    }
+    .right {
+      display: flex;
+      gap: 20px;
+      button {
+        width: 76px;
+        height: 76px;
+        fill: #fff;
+        border: 1px solid $neutral-100;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
 // Event and University Visits START
 .university-visits {
   margin: size(80) size(0);

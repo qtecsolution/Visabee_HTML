@@ -96,9 +96,9 @@
     input {
       width: 70px;
       background-color: transparent;
-
+      color: $white;
       @include breakpoint(tab992) {
-        width: 100px;
+        width: 80%;
       }
     }
   }
