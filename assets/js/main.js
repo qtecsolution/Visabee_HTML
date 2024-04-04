@@ -1,23 +1,8 @@
-const navbar = document.querySelector('.navbar');
-const navBtn = document.querySelector('#navbarNavBtn');
-const navNav = document.querySelector('#navbarNav');
-const navLinks = document.getElementsByClassName('nav-link');
-
-for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener('click', function () {
-    if (this.classList.contains('dropdown-toggle')) {
-      return;
-    }
-
-    let current = document.getElementsByClassName('active');
-    current[0].className = current[0].className.replace(' active', '');
-
-    this.className += ' active';
-    navNav.classList.toggle('open');
+// nice-select2
+document.addEventListener("DOMContentLoaded", function (e) {
+  var els = document.querySelectorAll(".selectize");
+  els.forEach(function (select) {
+    NiceSelect.bind(select);
+    console.log(select)
   });
-}
-
-//navbar show and hide functionality on mobile
-navBtn.addEventListener('click', () => {
-  navNav.classList.toggle('open');
 });

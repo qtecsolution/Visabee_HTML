@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
   <!-- CUSTOM-CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="assets/css/nice-select/nice-select2.css" />
 </head>
 
 <body>
@@ -153,13 +155,84 @@
 
   <!-- MAIN SECTION START -->
   <main>
-    <!-- All List of Course start -->
-    <section class="scholarships-list mb-3 mb-lg-4 mb-xl-5 ">
+    <!-- Contact usstart -->
+    <section class="contact-us mb-3 mb-lg-4 mb-xl-5 ">
       <div class="container">
-        
+        <div class="contact-us-form">
+          <form class="">
+
+            <div class="name-email d-md-flex">
+              <input type="text" name="name" id="name" placeholder="Name">
+              <input class="mt-3 mt-md-0 " type="email" name="email" id="email" placeholder="Email Address">
+            </div>
+
+            <div class="number-agent d-md-flex mt-3">
+              <input type="number" name="phone-number" id="phone-number" placeholder="Phone Number" class="me-3 ">
+              <select class="selectize">
+                <option data-display="Select">Nothing</option>
+                <option value="1">Some option</option>
+                <option value="2">Another option</option>
+                <option value="4">Potato</option>
+              </select>
+            </div>
+
+            <div class="subject mt-3">
+              <input type="text" name="subject" id="subject" placeholder="Subject">
+            </div>
+
+            <div class="message mt-3">
+              <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+            </div>
+            <div class="mt-3 ">
+              <button class="from-button">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
       </div>
     </section>
-    <!-- All List of Course end -->
+
+    <section class="contact-details">
+      <div class="container">
+        <div class="contact-details-inner">
+          <div class="">
+            <h2>Contact Details</h2>
+
+            <p>Sukrabad,Dhanmondi 32 Dhaka 1205</p>
+
+            <div class="">
+              <i class="fa-solid fa-phone"></i>
+              <span>Tell: +88 01727-425874</span>
+            </div>
+            <div class="">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Email: info@example.com</span>
+            </div>
+            <div class="">
+              <img src="./assets/images/contact-details/websit.svg" alt="">
+              <span>Website: visabee.com</span>
+            </div>
+
+            <div class="">
+              <h4>Social Media</h4>
+              <div class="">
+                <img src="./assets/images/contact-details/twiter.svg" alt="">
+                <img src="./assets/images/contact-details/fb.svg" alt="">
+                <img src="./assets/images/contact-details/ins.svg" alt="">
+                <img src="./assets/images/contact-details/link.svg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="">
+            <img src="./assets/images/contact-details/Contact Details.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact us end -->
   </main>
   <!-- MAIN SECTION END -->
 
@@ -346,11 +419,15 @@
   <script src="assets/js/tooltip/tooltip.js"></script>
   <!-- PARALLAX-JS -->
   <script src="assets/js/parallax/parallax.js"></script>
+  <!-- nice-select2 -->
+  <script src="assets/js/nice-select/nice-select2.js"></script>
   <!-- BACK-TO-TOP-JS -->
   <script src="assets/js/back-top/back-top.js"></script>
   <script src="assets/js/back-top/backtotop.js"></script>
   <!-- INFINITY-SCROLL-JS -->
   <script src="assets/js/infinityscroll/infinityscroll.js"></script>
+  <!-- main js file -->
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -54,6 +54,20 @@ button,
   }
 }
 
+.from-button {
+  background: $gradient-hover-active;
+  width: 100%;
+  @include radius(10);
+  padding: size(16) size(0);
+  color: $white;
+  font-size: size(16);
+  font-weight: 700;
+  
+  @include hover {
+    background: $gradient-orginal;
+  }
+}
+
 // .btn-submit {
 //   background: $blue-green-500;
 //   @include border(solid, 2, $blue-green-500);

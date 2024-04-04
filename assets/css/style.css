@@ -169,6 +169,19 @@ button:focus,
   background: linear-gradient(354deg, #0024fc 14.01%, #00ffad 102.56%);
 }
 
+.from-button {
+  background: linear-gradient(104deg, #0c31ff 0%, #009666 86.58%);
+  width: 100%;
+  border-radius: 0.625rem;
+  padding: 1rem 0rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.from-button:not([disabled]):hover {
+  background: linear-gradient(354deg, #0024fc 14.01%, #00ffad 102.56%);
+}
+
 .cardservice {
   background: linear-gradient(97deg, rgba(255, 255, 255, 0.95) 1.12%, #fff 98.93%);
   border: solid 0.0625rem #f1f1f1;
@@ -3081,6 +3094,76 @@ table tr td {
   font-size: 1rem;
   border: 1px solid #e6e6e7;
   border-radius: 10px;
+}
+
+.contact-us-form {
+  border-radius: 24px;
+  border: 1px solid #f5f5f6;
+  background: #fff;
+  padding: 1.5rem;
+}
+.contact-us-form form .name-email {
+  gap: 16px;
+}
+.contact-us-form form .number-agent .nice-select {
+  background-color: #fafafa;
+  border-radius: 12px;
+  border: solid 1px #f1f1f1;
+  font-size: 16px;
+  height: 38px;
+  line-height: 36px;
+  height: 54px;
+  padding-left: 18px;
+  padding-right: 30px;
+  width: 99%;
+}
+.contact-us-form form .number-agent .nice-select .nice-select-dropdown {
+  width: 100%;
+}
+.contact-us-form form .number-agent .nice-select .current {
+  margin-top: 10px;
+}
+.contact-us-form form .level-country .nice-select {
+  background-color: #fafafa;
+  border-radius: 12px;
+  border: solid 1px #f1f1f1;
+  font-size: 16px;
+  height: 38px;
+  line-height: 36px;
+  height: 54px;
+  padding-left: 18px;
+  margin-left: -15px;
+  padding-right: 30px;
+  width: 100%;
+}
+.contact-us-form form .level-country .nice-select .nice-select-dropdown {
+  width: 100%;
+}
+.contact-us-form form .level-country .nice-select .current {
+  margin-top: 10px;
+}
+.contact-us-form form input,
+.contact-us-form form select,
+.contact-us-form form textarea {
+  border-radius: 12px;
+  border: 1px solid #f1f1f1;
+  background: #fafafa;
+  padding: 1rem;
+  width: 100%;
+}
+.contact-us-form form input::-moz-placeholder, .contact-us-form form textarea::-moz-placeholder {
+  color: #5b5b5f;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+.contact-us-form form input::placeholder,
+.contact-us-form form textarea::placeholder {
+  color: #5b5b5f;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+.contact-us-form form .inner-button {
+  width: 100%;
 }
 
 html {
