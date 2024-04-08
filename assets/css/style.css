@@ -3399,6 +3399,24 @@ table tr td {
   color: hsl(0, 0%, 100%);
 }
 
+.our-mission {
+  margin-top: 40px;
+}
+@media screen and (min-width: 48rem) {
+  .our-mission {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 61.9375rem) {
+  .our-mission {
+    margin-top: 90px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .our-mission {
+    margin-top: 100px;
+  }
+}
 @media screen and (min-width: 64rem) {
   .our-mission-inner {
     background: #edfff9;
@@ -3503,6 +3521,122 @@ table tr td {
 }
 @media screen and (min-width: 64rem) {
   .our-vision-inner .right {
+    border-radius: 0px;
+  }
+}
+
+.meet-the-expert-card {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 16px 37px 74.9px 0px rgba(185, 185, 185, 0.1);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.meet-the-expert-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.meet-the-expert-card .img img {
+  width: 100%;
+}
+.meet-the-expert-card .text {
+  padding: 24px;
+}
+.meet-the-expert-card .text h3 {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.375rem;
+}
+.meet-the-expert-card .text p {
+  color: #6a6b70;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.meet-the-expert-card .text h5 {
+  font-weight: 500;
+  color: #6a6b70;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+.meet-the-expert-card .text .button {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #0c31ff;
+  transition: all 0.5s ease;
+}
+.meet-the-expert-card .text .button:hover {
+  background: #0c31ff;
+  color: #fff;
+}
+
+.your-guide {
+  margin-top: 40px;
+}
+@media screen and (min-width: 48rem) {
+  .your-guide {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 61.9375rem) {
+  .your-guide {
+    margin-top: 90px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .your-guide {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .your-guide-inner {
+    background: #edffff;
+    border-radius: 40px;
+  }
+}
+.your-guide-inner .left {
+  background: #edffff;
+  padding: 4.375rem 0rem 4.375rem 3.75rem;
+  border-radius: 40px;
+}
+@media screen and (min-width: 48rem) {
+  .your-guide-inner .left {
+    padding: 7.8125rem 0rem 7.8125rem 7.25rem;
+  }
+}
+.your-guide-inner .left h2 {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.your-guide-inner .left p {
+  max-width: 449px;
+  color: #444546;
+  font-family: "Inter", sans-serif;
+  line-height: 1.75rem;
+  margin: 1.875rem 0rem;
+}
+.your-guide-inner .right {
+  border-radius: 40px;
+  background-image: linear-gradient(88deg, #edffff 10.4%, rgba(237, 255, 255, 0.65) 34.87%, rgba(255, 255, 255, 0) 56.24%), url("./../../assets/images/mission-vision/your-guide.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 541px;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 64rem) {
+  .your-guide-inner .right {
     border-radius: 0px;
   }
 }
