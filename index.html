@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- BACK-TO-TOP-CSS -->
   <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- BOOTSTRAP-CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
   <!-- CUSTOM-CSS -->
@@ -87,7 +89,7 @@
                         <div class="accordion-body">
                           <ul class="">
                             <li>
-                              <a href="">Mission Vision</a>
+                              <a href="./mission-vision.html">Mission Vision</a>
                             </li>
                             <li>
                               <a href="">Company Profile</a>
@@ -383,14 +385,75 @@
           <div class="left">
             <h1>Media and Events</h1>
             <p class="mt-2 mt-lg-4 ">
-              Visabee helps with student visas, visas for spouses of students, and visitor visas for parents, covering the UK, USA, Canada, Australia, and Malaysia.
+              Visabee helps with student visas, visas for spouses of students, and visitor visas for parents, covering
+              the UK, USA, Canada, Australia, and Malaysia.
             </p>
           </div>
           <div class="right">
-            <button><i class="fa-solid fa-chevron-left"></i></button>
-            <button><i class="fa-solid fa-chevron-right"></i></button>
+            <button>
+              <div id="button-prev-relacionados" class="swiper-button-prev"></div>
+            </button>
+            <button>
+              <div id="button-next-relacionados" class="swiper-button-next"></div>
+            </button>
           </div>
         </div>
+
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="media1">
+                <img src="./assets/images/home/media1.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media2">
+                <img src="./assets/images/home/media2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media1">
+                <img src="./assets/images/home/media3.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media2">
+                <img src="./assets/images/home/media4.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media1">
+                <img src="./assets/images/home/media1.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media2">
+                <img src="./assets/images/home/media2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media1">
+                <img src="./assets/images/home/media3.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="media2">
+                <img src="./assets/images/home/media4.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
       </div>
     </section>
     <!-- Media and Events end -->
@@ -605,8 +668,12 @@
   <!-- BACK-TO-TOP-JS -->
   <script src="assets/js/back-top/back-top.js"></script>
   <script src="assets/js/back-top/backtotop.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- INFINITY-SCROLL-JS -->
   <script src="assets/js/infinityscroll/infinityscroll.js"></script>
+  <!-- main js -->
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

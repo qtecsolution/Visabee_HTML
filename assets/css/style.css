@@ -2540,35 +2540,99 @@ table tr td {
   padding: 2.375rem 3rem;
 }
 
-.media-events-header .left {
-  max-width: 520px;
+@media screen and (min-width: 48rem) {
+  .media-events-header .left {
+    max-width: 520px;
+  }
 }
 .media-events-header .left h1 {
   color: #12141d;
   font-family: "Inter", sans-serif;
-  font-size: 2.625rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 3rem;
+}
+@media screen and (min-width: 48rem) {
+  .media-events-header .left h1 {
+    font-size: 2.625rem;
+  }
 }
 .media-events-header .left p {
   color: #12141d;
   font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   line-height: 1.75rem;
+}
+@media screen and (min-width: 48rem) {
+  .media-events-header .left p {
+    font-size: 1.125rem;
+  }
 }
 .media-events-header .right {
   display: flex;
   gap: 20px;
 }
 .media-events-header .right button {
-  width: 76px;
-  height: 76px;
+  width: 38px;
+  height: 38px;
   fill: #fff;
   border: 1px solid #e6e6e7;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+@media screen and (min-width: 48rem) {
+  .media-events-header .right button {
+    width: 76px;
+    height: 76px;
+  }
+}
+.media-events-header .right button .swiper-button-next,
+.media-events-header .right button .swiper-button-prev {
+  top: 50%;
+}
+.media-events-header .right button .swiper-button-next {
+  right: 10%;
+}
+@media screen and (min-width: 48rem) {
+  .media-events-header .right button .swiper-button-next {
+    right: 30%;
+  }
+}
+.media-events-header .right button .swiper-button-prev {
+  left: 10%;
+}
+@media screen and (min-width: 48rem) {
+  .media-events-header .right button .swiper-button-prev {
+    left: 30%;
+  }
+}
+.media-events-header .right button .swiper-button-next:after,
+.media-events-header .right button .swiper-button-prev:after {
+  font-size: 14px;
+  color: #12141d;
+}
+@media screen and (min-width: 48rem) {
+  .media-events-header .right button .swiper-button-next:after,
+  .media-events-header .right button .swiper-button-prev:after {
+    font-size: 20px;
+  }
+}
+.media-events .mySwiper1 {
+  margin-top: 80px;
+}
+.media-events .mySwiper1 .media1 {
+  height: 341px;
+}
+.media-events .mySwiper1 .media1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.media-events .mySwiper1 .media2 {
+  margin-top: 50px;
 }
 
 .university-visits {

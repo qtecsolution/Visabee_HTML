@@ -405,34 +405,87 @@
 .media-events {
   &-header {
     .left {
-      max-width: 520px;
+      @include breakpoint(mobile768) {
+        max-width: 520px;
+      }
       h1 {
         color: #12141d;
         font-family: $primaryfont;
-        font-size: size(42);
+        font-size: size(16);
         font-weight: 700;
         line-height: size(48);
+        @include breakpoint(mobile768) {
+          font-size: size(42);
+        }
       }
       p {
         color: #12141d;
         font-family: $primaryfont;
-        font-size: size(18);
+        font-size: size(12);
         line-height: size(28);
+        @include breakpoint(mobile768) {
+          font-size: size(18);
+        }
       }
     }
     .right {
       display: flex;
       gap: 20px;
       button {
-        width: 76px;
-        height: 76px;
+        width: 38px;
+        height: 38px;
         fill: #fff;
         border: 1px solid $neutral-100;
         border-radius: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        @include breakpoint(mobile768) {
+          width: 76px;
+          height: 76px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 50%;
+        }
+        .swiper-button-next {
+          right: 10%;
+          @include breakpoint(mobile768) {
+            right: 30%;
+          }
+        }
+        .swiper-button-prev {
+          left: 10%;
+          @include breakpoint(mobile768) {
+            left: 30%;
+          }
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+          font-size: 14px;
+          color: #12141d;
+          @include breakpoint(mobile768) {
+            font-size: 20px;
+          }
+        }
       }
+    }
+  }
+
+  .mySwiper1 {
+    margin-top: 80px;
+    .media1{
+      height: 341px;
+      img{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    .media2{
+      margin-top: 50px;
     }
   }
 }
