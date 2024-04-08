@@ -154,14 +154,18 @@
           gap: 24px;
         }
         .button {
-          padding: 10px 18px;
+          padding: 5px 9px;
           border-radius: 9.606px;
           border: 1.601px solid #f3f3f3;
           color: $neutral-400; //#85868B
           font-family: $primaryfont;
-          font-size: 24px;
+          font-size: 16px;
           font-weight: 500;
           transition: all 0.5s ease;
+          @include breakpoint(mobile768) {
+            padding: 10px 18px;
+            font-size: 24px;
+          }
           &:hover {
             border: 1.601px solid $primary-color-900;
             background: $primary-color-900;

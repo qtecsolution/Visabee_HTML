@@ -2981,14 +2981,20 @@ table tr td {
   }
 }
 .country-list .page-btn .button {
-  padding: 10px 18px;
+  padding: 5px 9px;
   border-radius: 9.606px;
   border: 1.601px solid #f3f3f3;
   color: #85868b;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   transition: all 0.5s ease;
+}
+@media screen and (min-width: 48rem) {
+  .country-list .page-btn .button {
+    padding: 10px 18px;
+    font-size: 24px;
+  }
 }
 .country-list .page-btn .button:hover {
   border: 1.601px solid #076046;
@@ -3151,14 +3157,20 @@ table tr td {
   }
 }
 .scholarships-list-inner .left .page-btn .button {
-  padding: 10px 18px;
+  padding: 5px 9px;
   border-radius: 9.606px;
   border: 1.601px solid #f3f3f3;
   color: #85868b;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   transition: all 0.5s ease;
+}
+@media screen and (min-width: 48rem) {
+  .scholarships-list-inner .left .page-btn .button {
+    padding: 10px 18px;
+    font-size: 24px;
+  }
 }
 .scholarships-list-inner .left .page-btn .button:hover {
   border: 1.601px solid #076046;
@@ -3346,6 +3358,39 @@ table tr td {
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
   }
+}
+
+.photo-gallery .page-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media screen and (min-width: 48rem) {
+  .photo-gallery .page-btn {
+    gap: 24px;
+  }
+}
+.photo-gallery .page-btn .button {
+  padding: 5px 9px;
+  border-radius: 9.606px;
+  border: 1.601px solid #f3f3f3;
+  color: #85868b;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+@media screen and (min-width: 48rem) {
+  .photo-gallery .page-btn .button {
+    padding: 10px 18px;
+    font-size: 24px;
+  }
+}
+.photo-gallery .page-btn .button:hover {
+  border: 1.601px solid #076046;
+  background: #076046;
+  color: hsl(0, 0%, 100%);
 }
 
 html {
