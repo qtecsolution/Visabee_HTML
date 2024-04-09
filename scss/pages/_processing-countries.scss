@@ -3,6 +3,13 @@
 
 // country-list
 .country-list {
+  margin-top: size(60);
+  @include breakpoint(mobile768) {
+    margin-top: size(100);
+  }
+  @include breakpoint(tab992) {
+    margin-top: size(150);
+  }
   &-hedar {
     align-items: center;
     padding-bottom: 10px;
@@ -112,8 +119,8 @@
       border: 1px solid #e6e6e7;
       padding: size(65) size(34);
       cursor: pointer;
-      transition: all .5s ease;
-      &:hover{
+      transition: all 0.5s ease;
+      &:hover {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
       .img {

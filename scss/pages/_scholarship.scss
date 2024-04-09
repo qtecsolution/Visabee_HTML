@@ -4,6 +4,13 @@
 // scholarships-list
 
 .scholarships-list {
+  margin-top: size(60);
+  @include breakpoint(mobile768) {
+    margin-top: size(100);
+  }
+  @include breakpoint(tab992) {
+    margin-top: size(150);
+  }
   &-inner {
     .inner-content {
       border-radius: 21px;

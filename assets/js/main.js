@@ -28,3 +28,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
     console.log(select);
   });
 });
+
+$("header-nav-list li a").click(function(){
+  $("a.link").css("background-color", "black");
+$(this).css("background-color", "red");
+});
