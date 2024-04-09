@@ -117,106 +117,148 @@
 }
 
 // about-us section
-// .about-us {
-//   .about-us-inner {
-//     .about-img-position {
-//       @include breakpoint(desktop1200) {
-//         top: -92px;
-//         left: 47%;
-//       }
-//       @include breakpoint(desktop1366) {
-//         left: 52%;
-//       }
-//       @include breakpoint(desktop1400) {
-//         left: 54%;
-//       }
-//     }
-//     max-width: 1450px;
-//     margin: 0 auto;
-//     border-radius: size(40);
-//     background: $primary-color-50;
-//     padding-left: size(134);
-//     @include breakpoint(tab992) {
-//       display: flex;
-//       justify-content: space-between;
-//     }
-//     @include breakpoint(desktop1200) {
-//       padding-left: size(68);
-//     }
+.about-us {
+  padding: 0 10px 0 10px;
+  @include breakpoint(tab992) {
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: size(40);
+    background: $primary-color-50;
+    padding: 0;
+  }
+  .about-us-inner {
+    .about-img-position {
+      display: none;
+      @include breakpoint(tab992) {
+        display: block;
+        top: -100px;
+        left: 47%;
+      }
+    }
+    @include breakpoint(tab992) {
+      display: flex;
+      justify-content: space-between;
+      padding-left: size(30);
+    }
+    @include breakpoint(desktop1200) {
+      padding-left: size(60);
+    }
 
-//     .about-us-inner-text {
-//       display: flex;
-//       flex-direction: column;
-//       gap: size(75);
-//       @include breakpoint(tab992) {
-//         max-width: size(449);
-//       }
-//       @include breakpoint(mobile768) {
-//         gap: size(40);
-//       }
-//       .about {
-//         margin-top: size(78);
-//         @include breakpoint(mobile768) {
-//           margin-top: size(50);
-//         }
-//         @include breakpoint(desktop1400) {
-//           // padding-left: size();
-//         }
-//         @include breakpoint(desktop1600) {
-//         }
-//       }
-//       h2.headding-text {
-//         color: $neutral-950; //#19191a;
-//         font-family: $primaryfont;
-//         font-size: size(42);
-//         font-weight: 700;
-//         line-height: size(48);
-//         margin-bottom: size(30);
-//         @include breakpoint(mobile768) {
-//           margin-bottom: size(15);
-//         }
-//       }
+    .about-us-inner-text {
+      display: flex;
+      flex-direction: column;
+      gap: size(75);
+      border-radius: size(40);
+      background: $primary-color-50;
+      padding: 40px;
+      margin: 0 auto;
+      @include breakpoint(tab992) {
+        width: 100%;
+      }
+      @include breakpoint(mobile768) {
+        gap: size(40);
+        // padding: 0;
+      }
+      @include breakpoint(tab992) {
+        max-width: size(449);
+        padding-top: size(75);
+        padding-bottom: size(75);
+      }
 
-//       p.par-text {
-//         color: $neutral-800; //#444546;
-//         font-family: $primaryfont;
-//         font-size: size(18);
-//         line-height: size(28);
-//       }
-//     }
-//   }
+      h2.headding-text {
+        color: $neutral-950; //#19191a;
+        font-family: $primaryfont;
+        font-size: size(42);
+        font-weight: 700;
+        line-height: size(48);
+        margin-bottom: size(30);
+        @include breakpoint(mobile768) {
+          margin-bottom: size(15);
+        }
+      }
 
-//   .about-us-inner-img {
-//     .card-position {
-//       bottom: -49px;
-//       right: size(42);
-//       @include breakpoint(mobile768) {
-//         right: size(22);
-//       }
-//       .sirvice-card-body {
-//         gap: size(28);
-//         .sirvice-card {
-//           width: size(230);
-//           padding: size(32) size(28);
-//           border-radius: size(16);
-//           background: #fff;
-//           .inner-card {
-//             align-items: center;
-//           }
-//           h3 {
-//             color: $footerbg;
-//             font-family: $primaryfont;
-//             font-size: size(18);
-//             font-weight: 700;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+      p.par-text {
+        color: $neutral-800; //#444546;
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28);
+      }
+    }
+  }
+
+  .about-us-inner-img {
+    background-image: linear-gradient(
+        90deg,
+        #edfff9 1.56%,
+        rgba(237, 255, 249, 0.84) 7.79%,
+        rgba(255, 255, 255, 0) 20.56%
+      ),
+      url("./../../assets/images/home/about-us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    // max-width: 634px;
+    height: 652px;
+    margin: 0 auto;
+    border-radius: size(40);
+    @include breakpoint(tab992) {
+      width: 100%;
+    }
+    .card-position {
+      bottom: -49px;
+      right: 11%;
+      @include breakpoint(mobile480) {
+        right: 7%;
+      }
+      @include breakpoint(mobile576) {
+        right: 17%;
+      }
+      @include breakpoint(mobile768) {
+        right: 30%;
+      }
+      @include breakpoint(tab992) {
+        right: size(42);
+      }
+      .sirvice-card-body {
+        gap: size(28);
+        .sirvice-card {
+          width: size(130);
+          padding: size(25) size(10);
+          border-radius: size(16);
+          background: #fff;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+          @include breakpoint(mobile480) {
+            width: size(180);
+            padding: size(22) size(14);
+          }
+          @include breakpoint(desktop1200) {
+            width: size(230);
+            padding: size(32) size(28);
+          }
+          .inner-card {
+            align-items: center;
+          }
+          h3 {
+            color: $footerbg;
+            font-family: $primaryfont;
+            font-size: size(10);
+            font-weight: 700;
+            @include breakpoint(desktop1200) {
+              font-size: size(18);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // Pick a Study Destination start
 .study-destination {
+  margin-top: 70px;
+  @include breakpoint(mobile768) {
+    margin-top: 70px;
+  }
   .inner-content {
     background-image: url(../../assets/images/home/study-destination.png);
     background-repeat: no-repeat;

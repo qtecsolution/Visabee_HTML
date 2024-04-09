@@ -2362,6 +2362,168 @@ table tr td {
   }
 }
 
+.about-us {
+  padding: 0 10px 0 10px;
+}
+@media screen and (min-width: 62rem) {
+  .about-us {
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 2.5rem;
+    background: #edfff9;
+    padding: 0;
+  }
+}
+.about-us .about-us-inner .about-img-position {
+  display: none;
+}
+@media screen and (min-width: 62rem) {
+  .about-us .about-us-inner .about-img-position {
+    display: block;
+    top: -100px;
+    left: 47%;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .about-us .about-us-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.875rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .about-us .about-us-inner {
+    padding-left: 3.75rem;
+  }
+}
+.about-us .about-us-inner .about-us-inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4.6875rem;
+  border-radius: 2.5rem;
+  background: #edfff9;
+  padding: 40px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 62rem) {
+  .about-us .about-us-inner .about-us-inner-text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .about-us .about-us-inner .about-us-inner-text {
+    gap: 2.5rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .about-us .about-us-inner .about-us-inner-text {
+    max-width: 28.0625rem;
+    padding-top: 4.6875rem;
+    padding-bottom: 4.6875rem;
+  }
+}
+.about-us .about-us-inner .about-us-inner-text h2.headding-text {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1.875rem;
+}
+@media screen and (min-width: 48rem) {
+  .about-us .about-us-inner .about-us-inner-text h2.headding-text {
+    margin-bottom: 0.9375rem;
+  }
+}
+.about-us .about-us-inner .about-us-inner-text p.par-text {
+  color: #444546;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.about-us .about-us-inner-img {
+  background-image: linear-gradient(90deg, #edfff9 1.56%, rgba(237, 255, 249, 0.84) 7.79%, rgba(255, 255, 255, 0) 20.56%), url("./../../assets/images/home/about-us.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  height: 652px;
+  margin: 0 auto;
+  border-radius: 2.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .about-us .about-us-inner-img {
+    width: 100%;
+  }
+}
+.about-us .about-us-inner-img .card-position {
+  bottom: -49px;
+  right: 11%;
+}
+@media screen and (min-width: 30rem) {
+  .about-us .about-us-inner-img .card-position {
+    right: 7%;
+  }
+}
+@media screen and (min-width: 36rem) {
+  .about-us .about-us-inner-img .card-position {
+    right: 17%;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .about-us .about-us-inner-img .card-position {
+    right: 30%;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .about-us .about-us-inner-img .card-position {
+    right: 2.625rem;
+  }
+}
+.about-us .about-us-inner-img .card-position .sirvice-card-body {
+  gap: 1.75rem;
+}
+.about-us .about-us-inner-img .card-position .sirvice-card-body .sirvice-card {
+  width: 8.125rem;
+  padding: 1.5625rem 0.625rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+@media screen and (min-width: 30rem) {
+  .about-us .about-us-inner-img .card-position .sirvice-card-body .sirvice-card {
+    width: 11.25rem;
+    padding: 1.375rem 0.875rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .about-us .about-us-inner-img .card-position .sirvice-card-body .sirvice-card {
+    width: 14.375rem;
+    padding: 2rem 1.75rem;
+  }
+}
+.about-us .about-us-inner-img .card-position .sirvice-card-body .sirvice-card .inner-card {
+  align-items: center;
+}
+.about-us .about-us-inner-img .card-position .sirvice-card-body .sirvice-card h3 {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 75rem) {
+  .about-us .about-us-inner-img .card-position .sirvice-card-body .sirvice-card h3 {
+    font-size: 1.125rem;
+  }
+}
+
+.study-destination {
+  margin-top: 70px;
+}
+@media screen and (min-width: 48rem) {
+  .study-destination {
+    margin-top: 70px;
+  }
+}
 .study-destination .inner-content {
   background-image: url(../../assets/images/home/study-destination.png);
   background-repeat: no-repeat;
