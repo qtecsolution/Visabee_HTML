@@ -2505,13 +2505,20 @@ table tr td {
 .student-achievement #carouselExample .carousel-control-next {
   top: 38%;
   background-color: hsl(0, 0%, 100%);
-  width: 76px;
-  height: 76px;
+  width: 38px;
+  height: 38px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #12141d;
+}
+@media screen and (min-width: 48rem) {
+  .student-achievement #carouselExample .carousel-control-prev,
+  .student-achievement #carouselExample .carousel-control-next {
+    width: 76px;
+    height: 76px;
+  }
 }
 @media screen and (min-width: 62rem) {
   .student-achievement #carouselExample .carousel-control-prev,
@@ -2521,8 +2528,14 @@ table tr td {
 }
 .student-achievement #carouselExample .carousel-control-prev i,
 .student-achievement #carouselExample .carousel-control-next i {
-  font-size: 20px;
+  font-size: 14px;
   color: #12141d;
+}
+@media screen and (min-width: 48rem) {
+  .student-achievement #carouselExample .carousel-control-prev i,
+  .student-achievement #carouselExample .carousel-control-next i {
+    font-size: 20px;
+  }
 }
 .student-achievement #carouselExample .carousel-control-prev {
   left: 2%;

@@ -352,19 +352,26 @@
     .carousel-control-next {
       top: 38%;
       background-color: $white;
-      width: 76px;
-      height: 76px;
+      width: 38px;
+      height: 38px;
       border-radius: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       color: #12141d;
+      @include breakpoint(mobile768) {
+        width: 76px;
+        height: 76px;
+      }
       @include breakpoint(tab992) {
         top: 70%;
       }
       i {
-        font-size: 20px;
+        font-size: 14px;
         color: #12141d;
+        @include breakpoint(mobile768) {
+          font-size: 20px;
+        }
       }
     }
 
@@ -476,15 +483,15 @@
 
   .mySwiper1 {
     margin-top: 80px;
-    .media1{
+    .media1 {
       height: 341px;
-      img{
+      img {
         height: 100%;
         width: 100%;
         border-radius: 20px;
       }
     }
-    .media2{
+    .media2 {
       margin-top: 50px;
     }
   }
