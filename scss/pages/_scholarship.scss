@@ -49,10 +49,13 @@
           &-heding {
             color: $neutral-950; // #19191A
             font-family: $primaryfont;
-            font-size: size(24);
+            font-size: size(18);
             text-align: left;
             font-weight: 600;
             line-height: size(34);
+            @include breakpoint(mobile768) {
+              font-size: size(24);
+            }
           }
           &-pra {
             margin-top: 8px;

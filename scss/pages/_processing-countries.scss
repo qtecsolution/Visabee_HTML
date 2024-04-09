@@ -53,7 +53,7 @@
       }
 
       form {
-        width: 290px;
+        width: 240px;
         @include breakpoint(tab992) {
           width: 503px;
         }
@@ -73,6 +73,7 @@
           font-size: size(10);
           @include breakpoint(mobile576) {
             font-size: size(16);
+            width: 90%;
           }
           ::placeholder {
             color: $neutral-200; // #CFCFD2);
@@ -87,8 +88,11 @@
       }
       .view {
         display: flex;
-        gap: size(12);
+        gap: size(5);
         align-items: center;
+        @include breakpoint(mobile768) {
+          gap: size(12);
+        }
       }
     }
   }
