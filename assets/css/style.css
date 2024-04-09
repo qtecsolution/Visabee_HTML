@@ -1043,6 +1043,12 @@ button:focus,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.header-nav-list li .active {
+  background: linear-gradient(104deg, #0c31ff 0%, #009666 86.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .header-nav-list .nav-button a:hover {
   color: #fff;
   background: transparent;
