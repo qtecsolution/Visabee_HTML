@@ -4,6 +4,9 @@
 // Hero section start
 .hero-section {
   padding: size(60) size(0);
+  @include breakpoint(tab992) {
+    padding-bottom: 173px;
+  }
   &-inner {
     display: flex;
     flex-direction: column-reverse;

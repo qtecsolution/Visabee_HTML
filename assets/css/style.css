@@ -2217,6 +2217,11 @@ table tr td {
 .hero-section {
   padding: 3.75rem 0rem;
 }
+@media screen and (min-width: 62rem) {
+  .hero-section {
+    padding-bottom: 173px;
+  }
+}
 .hero-section-inner {
   display: flex;
   flex-direction: column-reverse;
