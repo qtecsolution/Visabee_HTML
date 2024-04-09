@@ -1348,10 +1348,23 @@ input[type=search]::-webkit-search-results-decoration:focus {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .footer .sosial-icon-border i {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
+}
+.footer .sosial-icon .facebook:hover {
+  background-color: #1877f2;
+}
+.footer .sosial-icon .twitter:hover {
+  background-color: #1da1f2;
+}
+.footer .sosial-icon .youtube:hover {
+  background-color: #DE332F;
+}
+.footer .sosial-icon .linkedin:hover {
+  background-color: #0073AE;
 }
 .footer .footer-list {
   list-style: none;
@@ -1371,7 +1384,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
   font-size: 1.125rem;
   line-height: 1.75rem;
   margin-bottom: 1.125rem;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease-in-out;
 }
 .footer .footer-list .footer-list-item .footer-text:hover {
   background: linear-gradient(104deg, #0c31ff 0%, #009666 86.58%);

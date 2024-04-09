@@ -25,9 +25,30 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      transition: all .4s ease-in-out;
       i {
         color: $white;
         font-size: 20px;
+      }
+    }
+    .facebook {
+      &:hover {
+        background-color: #1877f2;
+      }
+    }
+    .twitter {
+      &:hover {
+        background-color: #1da1f2;
+      }
+    }
+    .youtube {
+      &:hover {
+        background-color: #DE332F;
+      }
+    }
+    .linkedin {
+      &:hover {
+        background-color: #0073AE;
       }
     }
   }
@@ -50,14 +71,14 @@
         font-size: size(18);
         line-height: size(28);
         margin-bottom: size(18);
-        transition: all 0.5s ease;
+        transition: all .4s ease-in-out;
         &:hover {
           background: linear-gradient(104deg, #0c31ff 0%, #009666 86.58%);
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
-        &:active{
+        &:active {
           background: linear-gradient(104deg, #0c31ff 0%, #009666 86.58%);
           background-clip: text;
           -webkit-background-clip: text;
