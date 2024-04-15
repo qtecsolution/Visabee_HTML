@@ -1,3 +1,13 @@
+// nice-select2
+document.addEventListener("DOMContentLoaded", function (e) {
+  var els = document.querySelectorAll(".selectize");
+  els.forEach(function (select) {
+    NiceSelect.bind(select);
+    console.log(select);
+  });
+});
+
+// swiper js
 var swiper1 = new Swiper(".mySwiper1", {
   slidesPerView: 1,
   navigation: {
@@ -18,18 +28,4 @@ var swiper1 = new Swiper(".mySwiper1", {
       spaceBetween: 30,
     },
   },
-});
-
-// nice-select2
-document.addEventListener("DOMContentLoaded", function (e) {
-  var els = document.querySelectorAll(".selectize");
-  els.forEach(function (select) {
-    NiceSelect.bind(select);
-    console.log(select);
-  });
-});
-
-$("header-nav-list li a").click(function(){
-  $("a.link").css("background-color", "black");
-$(this).css("background-color", "red");
 });
