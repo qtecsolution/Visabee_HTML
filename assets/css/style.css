@@ -159,11 +159,17 @@ button:focus,
 
 .primary-button {
   background: linear-gradient(104deg, #0c31ff 0%, #009666 86.58%);
-  border-radius: 0.625rem;
-  padding: 0.3125rem 1.25rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
   color: hsl(0, 0%, 100%);
-  font-size: 0.875rem;
+  font-size: 0.625rem;
   font-weight: 700;
+}
+@media screen and (max-width: 61.9375rem) {
+  .primary-button {
+    font-size: 0.625rem;
+    padding: 0.3125rem 0.625rem;
+  }
 }
 .primary-button:not([disabled]):hover {
   background: linear-gradient(354deg, #0024fc 14.01%, #00ffad 102.56%);
@@ -1464,9 +1470,14 @@ input[type=search]::-webkit-search-results-decoration:focus {
   box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: space-between;
-  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  padding: 0.5rem 0.25rem 0.5rem 1rem;
   margin-top: 1.5rem;
   width: 100%;
+}
+@media screen and (min-width: 64rem) {
+  .footer .footer-form {
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+  }
 }
 @media screen and (min-width: 75rem) {
   .footer .footer-form {
@@ -1474,13 +1485,29 @@ input[type=search]::-webkit-search-results-decoration:focus {
   }
 }
 .footer .footer-form input {
-  width: 70px;
+  width: 100px;
   background-color: transparent;
   color: hsl(0, 0%, 100%);
+  font-size: 10px;
+}
+.footer .footer-form input::-moz-placeholder {
+  font-size: 10px;
+}
+.footer .footer-form input::placeholder {
+  font-size: 10px;
+}
+@media screen and (min-width: 62rem) {
+  .footer .footer-form input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .footer .footer-form input::placeholder {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 62rem) {
   .footer .footer-form input {
     width: 80%;
+    font-size: 16px;
   }
 }
 .footer .contact-us {
