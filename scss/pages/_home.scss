@@ -409,7 +409,7 @@
         height: 76px;
       }
       @include breakpoint(tab992) {
-        top: 70%;
+        top: 78%;
       }
       i {
         font-size: 14px;
@@ -422,20 +422,157 @@
 
     .carousel-control-prev {
       left: 2%;
-      @include breakpoint(mobile600) {
-        left: 38%;
-      }
       @include breakpoint(tab992) {
-        left: 40%;
+        left: 36%;
+      }
+      @include breakpoint(desktop1200) {
+        left: 37%;
       }
     }
     .carousel-control-next {
       right: 2%;
-      @include breakpoint(mobile600) {
-        right: 38%;
-      }
       @include breakpoint(tab992) {
-        right: 40%;
+        right: 46%;
+      }
+      @include breakpoint(desktop1200) {
+        right: 47%;
+      }
+    }
+  }
+}
+
+// student-achievement
+.student-achievement {
+  .inner-content {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: size(54);
+    align-items: flex-end;
+    background: $secondary-color-50; // #E8F4FF
+    @include breakpoint(tab992) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .left {
+      padding: 30px;
+      @include breakpoint(tab992) {
+        width: size(636);
+        padding-top: size(86);
+        padding-left: size(100);
+        padding-bottom: size(100);
+      }
+      @include breakpoint(desktop1400) {
+        width: size(700);
+      }
+      h1 {
+        color: #12141d;
+        font-family: $primaryfont;
+        font-size: size(20);
+        font-weight: 700;
+        margin-bottom: size(20);
+        @include breakpoint(mobile480) {
+          font-size: size(28);
+        }
+        @include breakpoint(desktop1024) {
+          margin-bottom: size(43);
+          font-size: size(40);
+          line-height: size(48);
+        }
+      }
+      .achievement2 {
+        top: 30px;
+        left: 360px;
+        @include breakpoint(mobile480) {
+          top: 30px;
+          left: 360px;
+        }
+        @include breakpoint(desktop1024) {
+          top: 92px;
+          left: 490px;
+        }
+      }
+      p {
+        color: #12141d;
+        font-family: $primaryfont;
+        font-size: 14px;
+        line-height: size(40);
+        @include breakpoint(desktop1400) {
+          font-size: size(24);
+        }
+      }
+      h4 {
+        font-weight: 600;
+        color: #12141d;
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(34);
+        margin-top: size(33);
+        margin-bottom: size(8);
+        @include breakpoint(mobile480) {
+          font-size: size(24);
+        }
+      }
+    }
+    .right {
+      margin-bottom: 0px;
+      margin: 53px;
+      background-image: url(../../assets/images/home/achievement3.png);
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+
+      background-color: $secondary-color-50;
+      @include breakpoint(tab992) {
+        margin-bottom: 70px;
+        margin-right: 40px;
+      }
+      .main-img {
+        @include breakpoint(tab992) {
+          margin-bottom: -70px;
+          margin-right: -50px;
+        }
+      }
+      .video-play {
+        bottom: 38px;
+        right: 77px;
+        width: 80px;
+        cursor: pointer;
+        @include breakpoint(mobile414) {
+          bottom: 67px;
+          right: 97px;
+        }
+        @include breakpoint(mobile480) {
+          bottom: 100px;
+          right: 140px;
+        }
+        @include breakpoint(mobile576) {
+          bottom: 125px;
+          right: 238px;
+        }
+        @include breakpoint(mobile600) {
+          bottom: 56px;
+          right: 168px;
+          width: 126px;
+        }
+        @include breakpoint(mobile768) {
+          bottom: 140px;
+          right: 228px;
+        }
+        @include breakpoint(tab992) {
+          bottom: 111px;
+          right: 211px;
+          width: 150px;
+        }
+        @include breakpoint(desktop1024) {
+          bottom: 26px;
+          right: 210px;
+          width: 150px;
+        }
+        @include breakpoint(desktop1200) {
+          right: 210px;
+          width: 266px;
+        }
       }
     }
   }

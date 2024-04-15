@@ -2716,7 +2716,7 @@ table tr td {
 @media screen and (min-width: 62rem) {
   .student-achievement #carouselExample .carousel-control-prev,
   .student-achievement #carouselExample .carousel-control-next {
-    top: 70%;
+    top: 78%;
   }
 }
 .student-achievement #carouselExample .carousel-control-prev i,
@@ -2735,7 +2735,12 @@ table tr td {
 }
 @media screen and (min-width: 62rem) {
   .student-achievement #carouselExample .carousel-control-prev {
-    left: 40%;
+    left: 36%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .student-achievement #carouselExample .carousel-control-prev {
+    left: 37%;
   }
 }
 .student-achievement #carouselExample .carousel-control-next {
@@ -2743,7 +2748,181 @@ table tr td {
 }
 @media screen and (min-width: 62rem) {
   .student-achievement #carouselExample .carousel-control-next {
-    right: 40%;
+    right: 46%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .student-achievement #carouselExample .carousel-control-next {
+    right: 47%;
+  }
+}
+
+.student-achievement .inner-content {
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 3.375rem;
+  align-items: flex-end;
+  background: #e8f4ff;
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement .inner-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.student-achievement .inner-content .left {
+  padding: 30px;
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement .inner-content .left {
+    width: 39.75rem;
+    padding-top: 5.375rem;
+    padding-left: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .student-achievement .inner-content .left {
+    width: 43.75rem;
+  }
+}
+.student-achievement .inner-content .left h1 {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 30rem) {
+  .student-achievement .inner-content .left h1 {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .student-achievement .inner-content .left h1 {
+    margin-bottom: 2.6875rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+.student-achievement .inner-content .left .achievement2 {
+  top: 30px;
+  left: 360px;
+}
+@media screen and (min-width: 30rem) {
+  .student-achievement .inner-content .left .achievement2 {
+    top: 30px;
+    left: 360px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .student-achievement .inner-content .left .achievement2 {
+    top: 92px;
+    left: 490px;
+  }
+}
+.student-achievement .inner-content .left p {
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .student-achievement .inner-content .left p {
+    font-size: 1.5rem;
+  }
+}
+.student-achievement .inner-content .left h4 {
+  font-weight: 600;
+  color: #12141d;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+  margin-top: 2.0625rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 30rem) {
+  .student-achievement .inner-content .left h4 {
+    font-size: 1.5rem;
+  }
+}
+.student-achievement .inner-content .right {
+  margin-bottom: 0px;
+  margin: 53px;
+  background-image: url(../../assets/images/home/achievement3.png);
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #e8f4ff;
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement .inner-content .right {
+    margin-bottom: 70px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement .inner-content .right .main-img {
+    margin-bottom: -70px;
+    margin-right: -50px;
+  }
+}
+.student-achievement .inner-content .right .video-play {
+  bottom: 38px;
+  right: 77px;
+  width: 80px;
+  cursor: pointer;
+}
+@media screen and (min-width: 25.875rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 67px;
+    right: 97px;
+  }
+}
+@media screen and (min-width: 30rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 100px;
+    right: 140px;
+  }
+}
+@media screen and (min-width: 36rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 125px;
+    right: 238px;
+  }
+}
+@media screen and (min-width: 37.5rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 56px;
+    right: 168px;
+    width: 126px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 140px;
+    right: 228px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 111px;
+    right: 211px;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .student-achievement .inner-content .right .video-play {
+    bottom: 26px;
+    right: 210px;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .student-achievement .inner-content .right .video-play {
+    right: 210px;
+    width: 266px;
   }
 }
 
