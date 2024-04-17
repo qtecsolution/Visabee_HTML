@@ -384,6 +384,17 @@
           font-weight: 700;
           line-height: size(34); /* 154.545% */
         }
+        .font-small{
+          color: #12141d;
+          text-align: center;
+          font-family: $primaryfont;
+          font-size: size(11);
+          font-weight: 700;
+          line-height: size(34); /* 154.545% */
+          @include breakpoint(mobile576) {
+            font-size: size(14);
+          }
+        }
       }
     }
   }
@@ -409,6 +420,9 @@
         height: 76px;
       }
       @include breakpoint(tab992) {
+        top: 81%;
+      }
+      @include breakpoint(desktop1200) {
         top: 78%;
       }
       i {
@@ -426,7 +440,7 @@
         left: 36%;
       }
       @include breakpoint(desktop1200) {
-        left: 37%;
+        left: 41%;
       }
     }
     .carousel-control-next {
@@ -435,7 +449,10 @@
         right: 46%;
       }
       @include breakpoint(desktop1200) {
-        right: 47%;
+        right: 43%;
+      }
+      @include breakpoint(desktop1367) {
+        right: 45%;
       }
     }
   }

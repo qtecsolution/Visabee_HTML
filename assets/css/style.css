@@ -2739,6 +2739,19 @@ table tr td {
   font-weight: 700;
   line-height: 2.125rem; /* 154.545% */
 }
+.study-destination .inner-content .inner-country-card3 .country-card .font-small {
+  color: #12141d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 2.125rem; /* 154.545% */
+}
+@media screen and (min-width: 36rem) {
+  .study-destination .inner-content .inner-country-card3 .country-card .font-small {
+    font-size: 0.875rem;
+  }
+}
 
 .student-achievement {
   margin-top: 120px;
@@ -2765,6 +2778,12 @@ table tr td {
 @media screen and (min-width: 62rem) {
   .student-achievement #carouselExample .carousel-control-prev,
   .student-achievement #carouselExample .carousel-control-next {
+    top: 81%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .student-achievement #carouselExample .carousel-control-prev,
+  .student-achievement #carouselExample .carousel-control-next {
     top: 78%;
   }
 }
@@ -2789,7 +2808,7 @@ table tr td {
 }
 @media screen and (min-width: 75rem) {
   .student-achievement #carouselExample .carousel-control-prev {
-    left: 37%;
+    left: 41%;
   }
 }
 .student-achievement #carouselExample .carousel-control-next {
@@ -2802,7 +2821,12 @@ table tr td {
 }
 @media screen and (min-width: 75rem) {
   .student-achievement #carouselExample .carousel-control-next {
-    right: 47%;
+    right: 43%;
+  }
+}
+@media screen and (min-width: 85.4375rem) {
+  .student-achievement #carouselExample .carousel-control-next {
+    right: 45%;
   }
 }
 
