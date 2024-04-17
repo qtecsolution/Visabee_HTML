@@ -30,4 +30,5 @@ var swiper1 = new Swiper(".mySwiper1", {
   },
 });
 
+// AOS
 AOS.init();
