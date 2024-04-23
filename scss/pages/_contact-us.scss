@@ -51,15 +51,24 @@ body {
           line-height: 36px;
           height: 54px;
           padding-left: 18px;
-          margin-left: -15px;
+          // margin-left: -15px;
           padding-right: 30px;
           width: 100%;
+          @include breakpoint(mobile576) {
+            margin-left: -15px;
+          }
           .nice-select-dropdown {
             width: 100%;
           }
           .current {
             margin-top: 10px;
           }
+        }
+      }
+      .subject {
+        padding-top: size(56);
+        @include breakpoint(mobile576) {
+          padding-top: size(0);
         }
       }
       input,
@@ -71,6 +80,7 @@ body {
         padding: size(16);
         width: 100%;
       }
+
       input,
       textarea {
         &::placeholder {

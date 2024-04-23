@@ -3876,15 +3876,27 @@ body {
   line-height: 36px;
   height: 54px;
   padding-left: 18px;
-  margin-left: -15px;
   padding-right: 30px;
   width: 100%;
+}
+@media screen and (min-width: 36rem) {
+  .contact-us-form form .level-country .nice-select {
+    margin-left: -15px;
+  }
 }
 .contact-us-form form .level-country .nice-select .nice-select-dropdown {
   width: 100%;
 }
 .contact-us-form form .level-country .nice-select .current {
   margin-top: 10px;
+}
+.contact-us-form form .subject {
+  padding-top: 3.5rem;
+}
+@media screen and (min-width: 36rem) {
+  .contact-us-form form .subject {
+    padding-top: 0rem;
+  }
 }
 .contact-us-form form input,
 .contact-us-form form select,
