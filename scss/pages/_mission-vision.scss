@@ -2,6 +2,12 @@
 @use "../partials" as *;
 
 // our-mission
+body{
+  overflow-x: hidden;
+  @include breakpoint(mobile768) {
+    overflow-x: auto;
+  }
+}
 .our-mission {
   margin-top: 40px;
   @include breakpoint(mobile768) {

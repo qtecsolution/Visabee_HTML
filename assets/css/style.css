@@ -3959,6 +3959,15 @@ table tr td {
   color: hsl(0, 0%, 100%);
 }
 
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
+  }
+}
+
 .our-mission {
   margin-top: 40px;
 }
