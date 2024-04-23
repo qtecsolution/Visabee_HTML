@@ -1,6 +1,13 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+body {
+  overflow-x: hidden;
+  @include breakpoint(mobile768) {
+    overflow-x: auto;
+  }
+}
+
 // country-list
 .country-list {
   margin-top: size(60);

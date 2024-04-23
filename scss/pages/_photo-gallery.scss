@@ -1,6 +1,12 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+body{
+  overflow-x: hidden;
+  @include breakpoint(mobile768) {
+    overflow-x: auto;
+  }
+}
 .photo-gallery{
   .page-btn {
     display: flex;

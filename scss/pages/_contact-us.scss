@@ -2,6 +2,13 @@
 @use "../partials" as *;
 
 // contact-us
+body {
+  overflow-x: hidden;
+  @include breakpoint(mobile768) {
+    overflow-x: auto;
+  }
+}
+
 .contact-us {
   &-form {
     border-radius: 24px;

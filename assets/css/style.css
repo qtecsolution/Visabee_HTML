@@ -3102,6 +3102,15 @@ table tr td {
   margin-bottom: 3.75rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
+  }
+}
+
 .services-hero-text {
   padding-top: 10rem;
 }
@@ -3341,6 +3350,15 @@ table tr td {
   font-weight: 700;
 }
 
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
+  }
+}
+
 .country-list {
   margin-top: 3.75rem;
 }
@@ -3551,6 +3569,15 @@ table tr td {
   color: hsl(0, 0%, 100%);
 }
 
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
+  }
+}
+
 .scholarships-list {
   margin-top: 3.75rem;
 }
@@ -3745,6 +3772,15 @@ table tr td {
   color: hsl(0, 0%, 100%);
 }
 
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
+  }
+}
+
 .university-innar {
   display: grid;
   gap: 24px;
@@ -3793,6 +3829,15 @@ table tr td {
   font-size: 1rem;
   border: 1px solid #e6e6e7;
   border-radius: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
+  }
 }
 
 .contact-us-form {
@@ -3923,6 +3968,15 @@ table tr td {
     border-radius: 0px;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: auto;
   }
 }
 

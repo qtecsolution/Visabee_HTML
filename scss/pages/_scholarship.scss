@@ -1,8 +1,14 @@
 @use "../global" as *;
 @use "../partials" as *;
 
-// scholarships-list
+body{
+  overflow-x: hidden;
+  @include breakpoint(mobile768) {
+    overflow-x: auto;
+  }
+}
 
+// scholarships-list
 .scholarships-list {
   margin-top: size(60);
   @include breakpoint(mobile768) {
