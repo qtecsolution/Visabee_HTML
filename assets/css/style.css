@@ -987,6 +987,11 @@ button:focus,
 }
 .header-inner-nav {
   border-bottom: solid 0.0625rem #e6e6e6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e8f4ff;
+  z-index: 9999999;
 }
 .header-nav {
   display: flex;
@@ -1542,23 +1547,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
   color: hsl(0, 0%, 100%);
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
-  font-weight: 700;
   line-height: 1.75rem;
-}
-@media screen and (min-width: 48rem) {
-  .footer .contact-us-innar .contact-text p {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .footer .contact-us-innar .contact-text p {
-    font-size: 0.875rem;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .footer .contact-us-innar .contact-text p {
-    font-size: 1.125rem;
-  }
 }
 .footer .copyright {
   color: hsl(0, 0%, 100%);
@@ -2290,7 +2279,7 @@ table tr td {
 }
 
 .hero-section {
-  padding: 3.75rem 0rem;
+  padding: 10rem 0rem 3.75rem 0rem;
 }
 @media screen and (min-width: 62rem) {
   .hero-section {
@@ -3114,16 +3103,16 @@ table tr td {
 }
 
 .services-hero-text {
-  margin-top: 3.75rem;
+  padding-top: 10rem;
 }
 @media screen and (min-width: 48rem) {
   .services-hero-text {
-    margin-top: 5.625rem;
+    padding-top: 11.875rem;
   }
 }
 @media screen and (min-width: 62rem) {
   .services-hero-text {
-    margin-top: 7.5rem;
+    padding-top: 13.75rem;
   }
 }
 .services-hero-text-heading {
@@ -3914,8 +3903,7 @@ table tr td {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 26px;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  margin: 0.3125rem 0rem 0.3125rem 0rem;
 }
 .contact-details-inner .left span {
   color: #5b5b5f;

@@ -3,7 +3,7 @@
 
 // Hero section start
 .hero-section {
-  padding: size(60) size(0);
+  padding: size(160) size(0) size(60) size(0);
   @include breakpoint(tab992) {
     padding-bottom: 173px;
   }
