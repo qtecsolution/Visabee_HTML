@@ -10,6 +10,7 @@ body{
 
 // services-hero
 .services-hero {
+  background: linear-gradient(360deg, #fff 0%, #e8f4ff 100%);
   &-text {
     padding-top: size(160);
     @include breakpoint(mobile768) {

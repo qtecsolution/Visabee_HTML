@@ -3111,6 +3111,9 @@ body {
   }
 }
 
+.services-hero {
+  background: linear-gradient(360deg, #fff 0%, #e8f4ff 100%);
+}
 .services-hero-text {
   padding-top: 10rem;
 }
