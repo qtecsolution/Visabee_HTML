@@ -4163,6 +4163,9 @@ body {
   }
 }
 
+.meet-the-expert .services-hero {
+  background: transparent;
+}
 .meet-the-expert-card {
   border-radius: 20px;
   background: #fff;
@@ -4201,7 +4204,7 @@ body {
 }
 .meet-the-expert-card .text .button {
   display: flex;
-  width: 100%;
+  width: 90%;
   padding: 16px;
   flex-direction: column;
   justify-content: center;

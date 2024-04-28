@@ -2,7 +2,7 @@
 @use "../partials" as *;
 
 // our-mission
-body{
+body {
   overflow-x: hidden;
   @include breakpoint(mobile768) {
     overflow-x: auto;
@@ -129,6 +129,10 @@ body{
 }
 
 .meet-the-expert {
+  .services-hero {
+    background: transparent;
+  }
+
   &-card {
     border-radius: 20px;
     background: #fff;
@@ -138,8 +142,8 @@ body{
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-    .img{
-      img{
+    .img {
+      img {
         width: 100%;
       }
     }
@@ -167,7 +171,7 @@ body{
       }
       .button {
         display: flex;
-        width: 100%;
+        width: 90%;
         padding: 16px;
         flex-direction: column;
         justify-content: center;

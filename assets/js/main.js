@@ -30,5 +30,24 @@ var swiper1 = new Swiper(".mySwiper1", {
   },
 });
 
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
 // AOS
 AOS.init();
