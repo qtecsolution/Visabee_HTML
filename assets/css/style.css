@@ -3101,6 +3101,104 @@ table tr td {
 .university-visits .heading-text {
   margin-bottom: 3.75rem;
 }
+.university-visits .right button .swiper-button-prev:after {
+  color: white;
+  font-weight: 900;
+}
+.university-visits .right button .swiper-button-next:after {
+  color: white;
+  font-weight: 900;
+}
+.university-visits .right .prev {
+  top: 160px;
+  left: -3px;
+  z-index: 100;
+  background: rgb(16, 83, 124);
+  opacity: 0.7;
+}
+@media screen and (min-width: 25.875rem) {
+  .university-visits .right .prev {
+    top: 200px;
+    left: -3px;
+  }
+}
+@media screen and (min-width: 37.375rem) {
+  .university-visits .right .prev {
+    top: 100px;
+    left: -8px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .university-visits .right .prev {
+    top: 130px;
+    left: -25px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .university-visits .right .prev {
+    top: 130px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .university-visits .right .prev {
+    top: 100px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .university-visits .right .prev {
+    top: 130px;
+  }
+}
+@media screen and (min-width: 85.4375rem) {
+  .university-visits .right .prev {
+    top: 180px;
+  }
+}
+.university-visits .right .next {
+  top: 160px;
+  right: -3px;
+  z-index: 100;
+  background: rgb(16, 83, 124);
+  opacity: 0.7;
+}
+@media screen and (min-width: 25.875rem) {
+  .university-visits .right .next {
+    top: 200px;
+    right: -3px;
+  }
+}
+@media screen and (min-width: 37.375rem) {
+  .university-visits .right .next {
+    top: 100px;
+    right: -9px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .university-visits .right .next {
+    top: 130px;
+    right: -25px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .university-visits .right .next {
+    top: 130px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .university-visits .right .next {
+    top: 100px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .university-visits .right .next {
+    top: 130px;
+  }
+}
+@media screen and (min-width: 85.4375rem) {
+  .university-visits .right .next {
+    top: 180px;
+  }
+}
 
 body {
   overflow-x: hidden;
@@ -4218,6 +4316,68 @@ body {
   background: #0c31ff;
   color: #fff;
 }
+.meet-the-expert .right button .swiper-button-prev:after {
+  color: white;
+  font-weight: 900;
+}
+.meet-the-expert .right button .swiper-button-next:after {
+  color: white;
+  font-weight: 900;
+}
+.meet-the-expert .right .prev {
+  top: 245px;
+  left: -12px;
+  z-index: 100;
+  background: rgb(16, 83, 124);
+  opacity: 0.7;
+}
+@media screen and (min-width: 36rem) {
+  .meet-the-expert .right .prev {
+    top: 345px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .meet-the-expert .right .prev {
+    left: -25px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .meet-the-expert .right .prev {
+    left: -33px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .meet-the-expert .right .prev {
+    right: -40px;
+  }
+}
+.meet-the-expert .right .next {
+  top: 245px;
+  right: -12px;
+  z-index: 100;
+  background: rgb(16, 83, 124);
+  opacity: 0.7;
+}
+@media screen and (min-width: 36rem) {
+  .meet-the-expert .right .next {
+    top: 345px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .meet-the-expert .right .next {
+    right: -25px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .meet-the-expert .right .next {
+    right: -33px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .meet-the-expert .right .next {
+    right: -40px;
+  }
+}
 
 .your-guide {
   margin-top: 40px;
@@ -4280,6 +4440,10 @@ body {
   .your-guide-inner .right {
     border-radius: 0px;
   }
+}
+
+.mission-vision-services-hero {
+  background: transparent;
 }
 
 html {
