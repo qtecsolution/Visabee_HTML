@@ -4446,6 +4446,66 @@ body {
   background: transparent;
 }
 
+.services-hero-text {
+  max-width: 844px;
+  margin: 0 auto;
+}
+.services-hero-text .hadder-text {
+  color: #19191a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+@media screen and (min-width: 31.25rem) {
+  .services-hero-text .hadder-text {
+    font-size: 2.1875rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .services-hero-text .hadder-text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .services-hero-text .hadder-text {
+    font-size: 3rem;
+  }
+}
+.services-hero-text figure img {
+  border-radius: 100%;
+}
+.services-hero-text .university-logo h3 {
+  color: #85868b;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.125rem; /* 141.667% */
+}
+@media screen and (min-width: 31.25rem) {
+  .services-hero-text .university-logo h3 {
+    font-size: 1.5rem;
+  }
+}
+.services-hero-text .university-logo p {
+  color: #6a6b70;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+}
+.services-hero-text .pra-text {
+  margin-top: 3.4375rem;
+}
+.services-hero-text .pra-text p {
+  color: #444546;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem; /* 155.556% */
+  text-align: justify;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;

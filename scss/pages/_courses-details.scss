@@ -1,0 +1,64 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.services-hero {
+  &-text {
+    max-width: 844px;
+    margin: 0 auto;
+
+    .hadder-text {
+      color: $neutral-950;
+      font-family: $primaryfont;
+      font-size: size(22);
+      font-weight: 700;
+      line-height: size(60);
+
+      @include breakpoint(mobile500) {
+        font-size: size(35);
+      }
+      @include breakpoint(mobile768) {
+        font-size: size(40);
+      }
+      @include breakpoint(desktop1024) {
+        font-size: size(48);
+      }
+    }
+    figure {
+      img {
+        border-radius: 100%;
+      }
+    }
+
+    .university-logo {
+      h3 {
+        color: $neutral-400; //#85868b
+        font-family: $primaryfont;
+        font-size: size(18);
+        font-style: normal;
+        font-weight: 500;
+        line-height: size(34); /* 141.667% */
+        @include breakpoint(mobile500) {
+          font-size: size(24);
+        }
+      }
+      p {
+        color: $neutral-500; // #6a6b70;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 500;
+        line-height: size(24); /* 150% */
+      }
+    }
+
+    .pra-text {
+      margin-top: size(55);
+      p {
+        color: $neutral-800; //#444546);
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28); /* 155.556% */
+        text-align: justify;
+      }
+    }
+  }
+}
