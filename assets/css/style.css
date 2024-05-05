@@ -1008,13 +1008,15 @@ button:focus,
   gap: 1.5rem;
   list-style: none;
 }
-.header-nav-list li .dropdown-toggle::after {
-  display: none;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+.header-nav-list .dropdown-about {
+  position: relative;
 }
-.header-nav-list li .dropdown-menu {
+.header-nav-list .dropdown-about:hover .dropdown-about-menu {
+  display: block;
+}
+.header-nav-list .dropdown-about .dropdown-about-menu {
+  display: none;
+  position: absolute;
   min-width: 14rem;
   padding: 0;
   margin: 0;
@@ -1023,11 +1025,11 @@ button:focus,
   border: none;
   border-radius: 0.625rem;
 }
-.header-nav-list li .dropdown-menu :nth-of-type(2) {
+.header-nav-list .dropdown-about .dropdown-about-menu :nth-of-type(2) {
   border-top: 1px solid #f3f3f3;
   border-bottom: 1px solid #f3f3f3;
 }
-.header-nav-list li .dropdown-menu li a {
+.header-nav-list .dropdown-about .dropdown-about-menu li a {
   padding: 0.9375rem 1.5rem;
 }
 .header-nav-list li a {

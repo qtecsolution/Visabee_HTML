@@ -18,7 +18,6 @@
     padding: size(24) size(0);
     // z-index: 99999999999999;
 
-
     .destop {
       display: none;
     }
@@ -28,14 +27,14 @@
       align-items: center;
       gap: size(24);
       list-style: none;
-      li {
-        .dropdown-toggle::after {
-          display: none;
-          border-top: none;
-          border-right: none;
-          border-left: none;
+      .dropdown-about {
+        position: relative;
+        &:hover .dropdown-about-menu{
+          display: block;
         }
-        .dropdown-menu {
+        .dropdown-about-menu {
+          display: none;
+          position: absolute;
           min-width: size(224);
           padding: 0;
           margin: 0;
@@ -53,6 +52,8 @@
             }
           }
         }
+      }
+      li {
         a {
           color: $neutral-900; //#3C3C3D
           font-family: $primaryfont;
