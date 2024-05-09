@@ -890,9 +890,9 @@
 
     ScrollTrigger.defaults({
       markers: false,
-      start: 500, 
-      end: 100, 
-      scrub: 10, 
+      start: 500,
+      end: 100,
+      scrub: 5,
     });
 
     let gsapanim = gsap.timeline({ scrollTrigger: { trigger: "#track" } });
@@ -900,7 +900,8 @@
     gsapanim.fromTo("#element", { x: 0, y: 0 },
       {
         duration: 3,
-        ease: "bounce.inOut",
+        ease: "power1.in",
+
 
         motionPath:
         {
@@ -908,8 +909,8 @@
             x: 0,
             y: '10vh'
           },
-         
-          { x: 0, y: '100vh' },
+
+          { x: 0, y: '140vh' },
           ]
         }
       },)
