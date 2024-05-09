@@ -20,8 +20,6 @@
   <!-- CUSTOM-CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    .about-us {}
-
     #element {
       position: absolute;
       width: 50px;
@@ -31,6 +29,26 @@
       transform: translateX(-50%);
       border-radius: 50%;
       z-index: 1;
+    }
+
+    .hero-img {
+      animation: rotateGlobe 20s linear infinite alternate;
+    }
+
+    @keyframes rotateGlobe {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotateY(-30deg) rotateX(3deg);
+      }
+      75% {
+        transform: rotate(-10deg);
+      }
+
+      100% {
+        transform: rotate(30deg);
+      }
     }
   </style>
 </head>
@@ -175,7 +193,7 @@
           </div>
         </div>
         <div class="">
-          <img src="./assets/images/home/hero.png" alt="">
+          <img class="hero-img" src="./assets/images/home/hero.png" alt="">
         </div>
       </div>
     </div>
