@@ -898,7 +898,9 @@
 
     let gsapanim = gsap.timeline({ scrollTrigger: { trigger: "#track" } });
     let yCoordinate;
-    if (window.innerHeight > 1000) {
+    if (window.innerHeight > 1200) {
+      yCoordinate = '50vh';
+    } else if (window.innerHeight > 1000) {
       yCoordinate = '70vh';
     } else if (window.innerHeight > 800) {
       yCoordinate = '80vh';
@@ -907,7 +909,7 @@
     } else if (window.innerHeight > 500) {
       yCoordinate = '110vh';
     } else {
-      yCoordinate = '120vh'; 
+      yCoordinate = '120vh';
     }
 
 
