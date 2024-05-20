@@ -259,11 +259,19 @@
 // Pick a Study Destination start
 .study-destination {
   margin-top: 70px;
+  position: relative;
+  .lottie {
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -1;
+  }
   @include breakpoint(mobile768) {
     margin-top: 70px;
   }
   .inner-content {
-    background-image: url(../../assets/images/home/study-destination.png);
+    // background-image: url(../../assets/images/home/study-destination.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
