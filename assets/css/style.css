@@ -2607,16 +2607,17 @@ table tr td {
 }
 
 .hero-section {
-  padding: 10rem 0rem 3.75rem 0rem;
+  padding: 8.75rem 0rem 3.75rem 0rem;
 }
 @media screen and (min-width: 62rem) {
   .hero-section {
     padding-bottom: 173px;
+    padding-top: 100px;
   }
 }
 .hero-section-inner {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 20px;
 }
 @media screen and (min-width: 48rem) {
@@ -2636,11 +2637,6 @@ table tr td {
   .hero-section-inner {
     flex-direction: row;
     gap: 6.25rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .hero-section-inner {
-    gap: 16.625rem;
   }
 }
 @media screen and (min-width: 48rem) {

@@ -3,13 +3,14 @@
 
 // Hero section start
 .hero-section {
-  padding: size(160) size(0) size(60) size(0);
+  padding: size(140) size(0) size(60) size(0);
   @include breakpoint(tab992) {
     padding-bottom: 173px;
+    padding-top: 100px;
   }
   &-inner {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
 
     @include breakpoint(mobile768) {
@@ -26,10 +27,12 @@
       gap: size(100);
     }
     @include breakpoint(desktop1200) {
-      gap: size(266);
+      // gap: size(266);
     }
 
     &-text {
+      // text-align: center;
+
       @include breakpoint(mobile768) {
         max-width: 249px;
       }
